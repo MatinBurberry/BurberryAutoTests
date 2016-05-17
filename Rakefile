@@ -57,7 +57,7 @@ task :run, [:task_name, :rerun_task_name] do |t, args|
   run_successful = run_rake_task(args[:task_name])
   rerun_successful = true
   unless run_successful
-    rerun_successful = run_rake_task(args[:_rerun_task_name])
+    rerun_successful = run_rake_task(args[:rerun_task_name])
   end
   exit false unless run_successful || rerun_successful
 end
