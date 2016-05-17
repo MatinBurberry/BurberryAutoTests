@@ -1,0 +1,16 @@
+base_url: http://test.salesforce.com
+
+test_username: qa1@burberry.com.test
+test_password: Burberry1234
+first_name_1: Automation
+last_name_1: QA_1
+
+test_username_2: qa2@burberry.com.test
+test_password_2: Burberry1234
+first_name_2: Automation
+last_name_2: QA_2
+
+test_username_3: qa3@burberry.com.test
+test_password_3: Burberry1234
+first_name_3: Automation
+last_name_3: QA_3
