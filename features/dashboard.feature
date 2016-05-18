@@ -13,7 +13,7 @@ Feature: Dashboard feature in Burberry World 2.0
     And I can create a post
     Then I should be able to see the post
 
-  #@dashboard @2posts
+  @dashboard @2posts
   Scenario: SFDC-829 Share a post and view it in Burberry World 2.0
     And I can share a post
     Then I should be able to see shared post
