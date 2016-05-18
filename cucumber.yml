@@ -12,26 +12,28 @@ test: FIG_NEWTON_FILE=test.yml --no-source --color --format html --out results/r
 #tools_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --color --format html --out results/report.html --tags @tools
 
 dashboard_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @dashboard
-groups_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --format rerun --out results/rerun.txt --color --format html --out results/report.html --tags @groups
+groups_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @groups
 knowledge_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @knowledge
 foundation_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @foundation
 icon_awards_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @icon_awards
 news_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @news
-navigation_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --format rerun --out results/rerun.txt --color --format html --out results/report.html --tags @navigation
-retail_cases_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --format rerun --out results/rerun.txt --color --format html --out results/report.html --tags @retail_cases
+navigation_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @navigation
+retail_cases_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @retail_cases
 tools_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @tools
 
 rerun_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --color @results/rerun.txt --format html --out results/report_rerun.html
 
-dashboard_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color --format html --out results/report.html --tags @dashboard
-groups_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color --format html --out results/report.html --tags @groups
-knowledge_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color --format html --out results/report.html --tags @knowledge
-foundation_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color --format html --out results/report.html --tags @foundation
-icon_awards_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color --format html --out results/report.html --tags @icon_awards
-news_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color --format html --out results/report.html --tags @news
-navigation_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color --format html --out results/report.html --tags @navigation
-retail_cases_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color --format html --out results/report.html --tags @retail_cases
-tools_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color --format html --out results/report.html --tags @tools
+dashboard_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @dashboard
+groups_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @groups
+knowledge_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @knowledge
+foundation_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @foundation
+icon_awards_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @icon_awards
+news_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @news
+navigation_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @navigation
+retail_cases_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @retail_cases
+tools_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @tools
+
+rerun_dev_ie: FIG_NEWTON_FILE=dev.yml BROWSER=ie --no-source --color @results/rerun.txt --format html --out results/report_rerun.html
 
 dashboard_test_chrome: FIG_NEWTON_FILE=test.yml --no-source --color --format html --out results/report.html --tags @dashboard
 groups_test_chrome: FIG_NEWTON_FILE=test.yml --no-source --color --format html --out results/report.html --tags @groups

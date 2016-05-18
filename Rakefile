@@ -102,6 +102,10 @@ Cucumber::Rake::Task.new(:tools_dev_ie) do |t|
   t.profile = 'tools_dev_ie'
 end
 
+Cucumber::Rake::Task.new(:rerun_dev_ie) do |t|
+  t.profile = 'rerun_dev_ie'
+end
+
 #-----------------------------------------------------------
 
 Cucumber::Rake::Task.new(:dashboard_test_chrome) do |t|
