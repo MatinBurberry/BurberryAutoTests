@@ -46,6 +46,10 @@ def generate_test_data
   $GIFT_DESC = 'Auto Gift' + $UN
 
   $HR_CASE = 'Auto HR Case' + $UN
+
+  $CUSTOMER_FIRST = 'John' + $UN
+  $CUSTOMER_LAST = 'Doe' + $UN
+
 end
 
 After do
@@ -57,7 +61,7 @@ After('@1post') do
     on(Burberry20Page).select_left_link_containing 'Dashboard'
     on(DashboardBurberry20Page).delete_post $POST
   rescue
-    # .. handle error
+    on(AbstractPage).log_deletion_warning($POST)
   end
 end
 
@@ -67,7 +71,7 @@ After('@2posts') do
     on(DashboardBurberry20Page).delete_post $POST
     on(DashboardBurberry20Page).delete_post $POST
   rescue
-    # .. handle error
+    on(AbstractPage).log_deletion_warning($POST)
   end
 end
 
@@ -75,7 +79,7 @@ After('@group') do
   begin
     on(GroupsBurberry20Page).delete_group $GROUP
   rescue
-    # .. handle error
+    on(AbstractPage).log_deletion_warning($GROUP)
   end
 end
 
@@ -86,7 +90,7 @@ After('@policy') do
     on(HomePage).find_and_delete_item($KNOWLEDGE_CATEGORY_2, 'Knowledge Categories')
     on(HomePage).find_and_delete_item($KNOWLEDGE_CATEGORY_3, 'Knowledge Categories')
   rescue
-    # .. handle error
+    on(AbstractPage).log_deletion_warning($KNOWLEDGE_CATEGORY_1)
   end
 end
 
@@ -96,7 +100,7 @@ After('@policy_1_2') do
     on(HomePage).find_and_delete_item($KNOWLEDGE_CATEGORY_1, 'Knowledge Categories')
     on(HomePage).find_and_delete_item($KNOWLEDGE_CATEGORY_2, 'Knowledge Categories')
   rescue
-    # .. handle error
+    on(AbstractPage).log_deletion_warning($KNOWLEDGE_CATEGORY_1)
   end
 end
 
@@ -105,7 +109,7 @@ After('@award_cycle') do
     on(HomePage).go_to_salesforce
     on(HomePage).find_and_delete_item($AWARD_CYCLE, 'Award Cycles')
   rescue
-    # .. handle error
+    on(AbstractPage).log_deletion_warning($AWARD_CYCLE)
   end
 end
 
@@ -114,7 +118,7 @@ After('@award_faq_set') do
     on(HomePage).go_to_salesforce
     on(HomePage).find_and_delete_item($AWARD_FAQ_SET, 'FAQ Sets')
   rescue
-    # .. handle error
+    on(AbstractPage).log_deletion_warning($AWARD_FAQ_SET)
   end
 end
 
@@ -123,7 +127,7 @@ After('@award_category') do
     on(HomePage).go_to_salesforce
     on(HomePage).find_and_delete_item($AWARD_CATEGORY, 'Award Categories')
   rescue
-    # .. handle error
+    on(AbstractPage).log_deletion_warning($AWARD_CATEGORY)
   end
 end
 
@@ -131,7 +135,7 @@ After('@award_post') do
   begin
     on(DashboardBurberry20Page).delete_post('I just made an')
   rescue
-    # .. handle error
+    on(AbstractPage).log_deletion_warning("Post 'I just made an'")
   end
 end
 
@@ -140,7 +144,7 @@ After('@volunteer_organization') do
     on(HomePage).go_to_salesforce
     on(HomePage).find_and_delete_item($VOLUNTEER_ORGANIZATION, 'Volunteer Organizations')
   rescue
-    # .. handle error
+    on(AbstractPage).log_deletion_warning($VOLUNTEER_ORGANIZATION)
   end
 end
 
@@ -149,7 +153,7 @@ After('@volunteer_activity') do
     on(HomePage).go_to_salesforce
     on(HomePage).find_and_delete_item($VOLUNTEER_ACTIVITY, 'Volunteer Activities')
   rescue
-    # .. handle error
+    on(AbstractPage).log_deletion_warning($VOLUNTEER_ACTIVITY)
   end
 end
 
@@ -159,6 +163,7 @@ After('@news_story') do
     on(HomePage).find_and_delete_item($NEWS_TITLE, 'News Stories')
   rescue
     # .. handle error
+    on(AbstractPage).log_deletion_warning($NEWS_TITLE)
   end
 end
 
@@ -168,26 +173,40 @@ After('@retail_vendor') do
     on(HomePage).find_and_delete_item($RETAIL_VENDOR, 'Retail Vendors')
   rescue
     # .. handle error
+    on(AbstractPage).log_deletion_warning($RETAIL_VENDOR)
   end
 end
 
 After('@retail_case') do
   begin
-    #on(HomePage).go_to_salesforce
-    #on(RetailCasesPage).find_and_delete_case($RETAIL_CASE, 'Cases')
+    on(HomePage).go_to_salesforce
+    on(RetailCasesPage).find_and_delete_case($RETAIL_CASE, 'Cases')
   rescue
     # .. handle error
+    on(AbstractPage).log_deletion_warning($RETAIL_CASE)
   end
 end
 
 After('@corporate_gift') do
- # begin
-    on(HomePage).go_to_salesforce
-    on(ToolsPage).delete_corporate_gift $GIFT_DESC
- # rescue
-    # .. handle error
-  #end
+  begin
+  on(HomePage).go_to_salesforce
+  on(ToolsPage).delete_corporate_gift $GIFT_DESC
+  rescue
+  # .. handle error
+  on(AbstractPage).log_deletion_warning($GIFT_DESC)
+  end
 end
+
+After('@cvm') do
+  begin
+    on(HomePage).go_to_salesforce
+    on(HomePage).find_and_delete_item($CUSTOMER_FIRST + ' ' + $CUSTOMER_LAST, 'Customers/Contacts')
+  rescue
+    # .. handle error
+    on(AbstractPage).log_deletion_warning($CUSTOMER_FIRST + ' ' + $CUSTOMER_LAST)
+  end
+end
+
 
 After do |scenario|
   if scenario.failed?
