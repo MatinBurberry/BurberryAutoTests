@@ -10,4 +10,5 @@ class Burberry20Page < AbstractPage
   def select_left_link_containing(link_name)
     link_element(:xpath => "//a[contains(text(),'" + link_name + "')]").when_present.click
   end
+
 end

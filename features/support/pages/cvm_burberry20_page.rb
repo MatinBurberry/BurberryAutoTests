@@ -88,11 +88,51 @@ class CVMBurberry20Page < Burberry20Page
   end
 
   def get_number_of_customers(sa)
-    br.element(xpath: "//div[contains(text(),'" + sa + "')]/..//span[contains(@class,'bar-size')]").text
+    br.element(xpath: "//div[contains(text(),'" + sa + "')]/..//span[contains(@class,'bar-size')]").when_present.text
   end
 
   def verify_number_of_customers(sa, number_before)
-    Integer(number_before) - Integer(get_number_of_customers sa)
+    number_before.to_i - (get_number_of_customers sa).to_i
   end
+
+  select_list(:customer_type, xpath: "//div[text()='CUSTOMER TYPE']/..//select")
+  select_list(:title, xpath: "//div[text()='TITLE']/..//select")
+  select_list(:city, xpath: "//div[text()='CITY']/..//select")
+  select_list(:country, xpath: "//div[text()='COUNTRY']/..//select")
+  select_list(:tier, xpath: "//div[text()='TIER']/..//select")
+  select_list(:status, xpath: "//div[text()='STATUS']/..//select")
+
+
+  def verify_customer_filters(user_from, customer)
+    select_sa user_from
+    sleep 2
+    customer_type_element.select 'New'
+    sleep 2
+    title_element.select 'Mr'
+    sleep 2
+    city_element.select 'Paris'
+    sleep 2
+    country_element.select 'France'
+    sleep 2
+    tier_element.select 'Classic'
+    sleep 2
+    status_element.select 'Exited'
+    sleep 2
+    sort_customers 'Descending (Z-A)'
+    br.element(xpath: "//strong[contains(text(),'" + customer + "')]").when_present.exists?
+  end
+
+  text_field(:search_customer, xpath: "//div[text()='SEARCH CUSTOMER']/..//input")
+  span(:search_customer_button, xpath: "//a[@class='search-customers-icon']/span[@class='icn search-black']")
+
+  def verify_customer_search(user_from, customer)
+    select_sa user_from
+    sleep 2
+    search_customer_element.send_keys customer
+    search_customer_button_element.click
+    sleep 2
+    br.element(xpath: "//strong[contains(text(),'" + customer + "')]").when_present.exists?
+  end
+
 
 end

@@ -39,7 +39,7 @@ class IconAwardsBurberry20Page < Burberry20Page
   end
 
   def nominate_check_description(category, nominant)
-    sleep 10
+    sleep 15
     nominate_element.when_present.click
     category_element.when_present.select(category)
     nominant_element.send_keys nominant

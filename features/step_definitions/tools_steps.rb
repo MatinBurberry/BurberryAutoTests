@@ -86,11 +86,28 @@ And(/^I should be able to verify reassignment message$/) do
   on(HomePage).select_app 'Burberry World 2.0'
   on(Burberry20Page).select_left_link_containing 'Tools'
   on(Burberry20Page).select_left_link_containing 'CVM Reassignment'
+  on(CVMBurberry20Page).verify_reassign_message($USER_1, $CUSTOMER_FIRST + ' ' + $CUSTOMER_LAST)
+end
+
+And(/^I should be able to verify customers count after reassignment$/) do
+  on(HomePage).select_app 'Burberry World 2.0'
+  on(Burberry20Page).select_left_link_containing 'Tools'
+  on(Burberry20Page).select_left_link_containing 'CVM Reassignment'
   number_of_customers = on(CVMBurberry20Page).get_number_of_customers($USER_1)
   on(CVMBurberry20Page).reassign_customer($USER_1, $USER_2, $CUSTOMER_FIRST + ' ' + $CUSTOMER_LAST)
   on(CVMBurberry20Page).verify_number_of_customers($USER_1, number_of_customers).should equal 1
 end
 
-And(/^Temp action$/) do
-  on(CustomersContactsPage).transcripts
+And(/^I should be able to verify customer filters$/) do
+  on(HomePage).select_app 'Burberry World 2.0'
+  on(Burberry20Page).select_left_link_containing 'Tools'
+  on(Burberry20Page).select_left_link_containing 'CVM Reassignment'
+  on(CVMBurberry20Page).verify_customer_filters($USER_1, $CUSTOMER_FIRST + ' ' + $CUSTOMER_LAST).should be true
+end
+
+And(/^I should be able to verify customer search$/) do
+  on(HomePage).select_app 'Burberry World 2.0'
+  on(Burberry20Page).select_left_link_containing 'Tools'
+  on(Burberry20Page).select_left_link_containing 'CVM Reassignment'
+  on(CVMBurberry20Page).verify_customer_search($USER_1, $CUSTOMER_FIRST + ' ' + $CUSTOMER_LAST).should be true
 end

@@ -85,4 +85,15 @@ class AbstractPage
     File.open("results/deletion_warnings.txt", 'a') { |f| f.write(Time.now.strftime("%d/%m/%Y %H:%M:%S") + " - " + object + " was not deleted\n") }
   end
 
+
+  def deleteItems(link, nameContains)
+    br.goto link
+    br.element(xpath: "//span[contains(text(),'" + nameContains + "')]/ancestor::tr[1]//span[text()='Del']").when_present
+   while (br.element(xpath: "//span[contains(text(),'" + nameContains + "')]/ancestor::tr[1]//span[text()='Del']").when_present.exists?)
+    br.element(xpath: "//span[contains(text(),'" + nameContains + "')]/ancestor::tr[1]//span[text()='Del']").when_present.click
+    br.alert.ok
+    sleep 2
+   end
+  end
+
 end

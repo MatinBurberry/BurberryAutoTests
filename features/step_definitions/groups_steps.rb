@@ -71,5 +71,5 @@ end
 
 And(/^Open My Groups and delete them$/) do
   on(HomePage).select_app 'Burberry World 2.0'
-  on(GroupsBurberry20Page).delete_all_groups("Auto")
+  on(GroupsBurberry20Page).delete_all_groups("Auto group")
 end

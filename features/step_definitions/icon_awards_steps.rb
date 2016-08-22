@@ -105,7 +105,7 @@ Then(/^I archive Icon Awards and verify in Burberry World 2.0$/) do
   on(HomePage).select_app 'Burberry World 2.0'
   on(Burberry20Page).select_left_link_containing 'Icon Awards'
   on(Burberry20Page).select_left_link_containing 'Archive'
-  on(IconAwardsBurberry20Page).verify_archive($AWARD_CATEGORY,$USER_2).should be true
+  on(IconAwardsBurberry20Page).verify_archive($AWARD_CATEGORY, $USER_2).should be true
 end
 
 Then(/^I should be able to see FAQ$/) do
@@ -115,3 +115,6 @@ Then(/^I should be able to see FAQ$/) do
   on(IconAwardsBurberry20Page).verify_FAQ.should be true
 end
 
+Then(/^Open Page "([^"]*)" and delete items "([^"]*)"$/) do |page, nameContains|
+  on(AbstractPage).deleteItems(page, nameContains)
+end

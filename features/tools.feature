@@ -55,7 +55,18 @@ Feature: Tools feature in Burberry World 2.0
     And I create Customer
     Then I should be able to verify reassignment message
 
-  Scenario: SFDC-XXX Temp
-    And Temp action
+  @tools @cvm
+  Scenario: SFDC-XXX Verify customers count after reassignment
+    And I create Customer
+    Then I should be able to verify customers count after reassignment
 
+  @tools @cvm
+  Scenario: SFDC-XXX Verify customer filters
+    And I create Customer
+    Then I should be able to verify customer filters
+
+  @tools @cvm
+  Scenario: SFDC-XXX Verify customer search
+    And I create Customer
+    Then I should be able to verify customer search
 

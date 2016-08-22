@@ -77,14 +77,4 @@ class CustomersContactsPage < AbstractPage
     sleep 2
   end
 
-
-  def transcripts
-    br.goto "https://login.salesforce.com/?un=jmitchella@is.gd&pw=11111qqqqq"
-    sleep 50
-    br.inputs(xpath: "//input[@type='checkbox']").each do |checkbox|
-      checkbox.click
-    end
-    sleep 20
-  end
-
 end
