@@ -15,6 +15,7 @@ class CVMBurberry20Page < Burberry20Page
   select(:sort_customers_by, xpath: "//select[@class='sortCustomers']")
 
   def sort_customers(option)
+    sleep 2
     sort_customers_by_element.select option
     sleep 2
   end
