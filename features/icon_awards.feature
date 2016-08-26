@@ -45,5 +45,3 @@ Feature: Icon Awards feature in Burberry World 2.0
     And I create Icon Awards nomination with category
     Then I should be able to see FAQ
 
-  Scenario: Items Cleanup
-    Then Open Page "https://burberry--dev.cs14.my.salesforce.com/a1L?fcf=00BD0000007TuLv" and delete items "Auto"

@@ -40,11 +40,11 @@ class CVMBurberry20Page < Burberry20Page
     result && br.element(xpath: "//strong[contains(text(),'" + customer + "')]/../div[text()='Classic, Exited, £ 1,500']").when_present.exists?
   end
 
-  button(:reassign_customer, xpath:"//input[@class='reassign-btn']")
+  button(:reassign_customer, xpath: "//input[@class='reassign-btn']")
   select_list(:to, xpath: "//div[text()='To']/..//select")
   select_list(:for, xpath: "//div[text()='For']/..//select")
-  button(:confirm, xpath:"//input[@class='confirm-btn']")
-  button(:back_to_home_page, xpath:"//input[@value='Back to home page']")
+  button(:confirm, xpath: "//input[@class='confirm-btn']")
+  button(:back_to_home_page, xpath: "//input[@value='Back to home page']")
   div(:notification, xpath: "//div[text()='You are reassigning 1 customers']")
 
   def reassign_customer(user_from, user_to, customer)
@@ -67,7 +67,12 @@ class CVMBurberry20Page < Burberry20Page
     sort_customers 'Descending (Z-A)'
     br.element(xpath: "//strong[contains(text(),'" + customer + "')]").when_present.click
     sleep 2
-    br.element(xpath: "//td[contains(text(),'" + sa_from + "')]/following-sibling::td[contains(text(),'" + sa_to + "')]/following-sibling::td[contains(text(),'" + date_offset_formatted(0, "%d/%m/%Y") + "')]").exists?
+    begin
+      br.element(xpath: "//td[contains(text(),'" + sa_from + "')]/following-sibling::td[contains(text(),'" + sa_to + "')]/following-sibling::td[contains(text(),'" + date_offset_formatted(0, "%d/%m/%Y") + "')]").exists?
+    rescue
+      br.element(xpath: "//td[contains(text(),'" + sa_from + "')]/following-sibling::td[contains(text(),'" + sa_to + "')]/following-sibling::td[contains(text(),'" + date_offset_formatted(-1, "%d/%m/%Y") + "')]").exists?
+    end
+
     #br.element(xpath: "//td[contains(text(),'" + sa_from + "')]/following-sibling::td[contains(text(),'" + sa_to + "')]/following-sibling::td[contains(text(),'11/07/2016')]").exists?
   end
 
@@ -89,6 +94,7 @@ class CVMBurberry20Page < Burberry20Page
   end
 
   def get_number_of_customers(sa)
+    sleep 4
     br.element(xpath: "//div[contains(text(),'" + sa + "')]/..//span[contains(@class,'bar-size')]").when_present.text
   end
 
