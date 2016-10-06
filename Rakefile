@@ -40,6 +40,10 @@ Cucumber::Rake::Task.new(:tools_dev_chrome) do |t|
   t.profile = 'tools_dev_chrome'
 end
 
+Cucumber::Rake::Task.new(:cleanup_dev_chrome) do |t|
+  t.profile = 'cleanup_dev_chrome'
+end
+
 Cucumber::Rake::Task.new(:rerun_dev_chrome) do |t|
   t.profile = 'rerun_dev_chrome'
 end
