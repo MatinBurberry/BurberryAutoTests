@@ -87,6 +87,9 @@ GEM
       watir-webdriver (>= 0.6.11)
     page_navigation (0.9)
       data_magic (>= 0.14)
+    parallel (1.9.0)
+    parallel_tests (2.9.0)
+      parallel
     pretty_face (0.10.3)
       actionpack (>= 3.2.13)
       syntax
@@ -165,6 +168,7 @@ DEPENDENCIES
   faker
   fig_newton
   page-object
+  parallel_tests
   pretty_face
   rails
   rake

@@ -20,6 +20,7 @@ news_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --color --format rerun --ou
 navigation_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @navigation
 retail_cases_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @retail_cases
 tools_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --color --format rerun --out results/rerun.txt --format html --out results/report.html --tags @tools
+cleanup_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --color --format html --tags @cleanup
 
 rerun_dev_chrome: FIG_NEWTON_FILE=dev.yml --no-source --color @results/rerun.txt --format html --out results/report_rerun.html
 

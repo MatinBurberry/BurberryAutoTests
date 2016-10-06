@@ -14,3 +14,7 @@ test_username_3: qa3@burberry.com.dev
 test_password_3: Burberry123456
 first_name_3: Automation
 last_name_3: QA_3
+
+gmail_url: http://mail.google.com/
+gmail_username: qaautomation001
+gmail_password: Burberry12345

@@ -88,12 +88,18 @@ class AbstractPage
 
   def deleteItems(link, nameContains)
     br.goto link
-    br.element(xpath: "//span[contains(text(),'" + nameContains + "')]/ancestor::tr[1]//span[text()='Del']").when_present
-   while (br.element(xpath: "//span[contains(text(),'" + nameContains + "')]/ancestor::tr[1]//span[text()='Del']").when_present.exists?)
-    br.element(xpath: "//span[contains(text(),'" + nameContains + "')]/ancestor::tr[1]//span[text()='Del']").when_present.click
-    br.alert.ok
-    sleep 2
-   end
+    begin
+      set_implicit_wait 10
+      while (br.element(xpath: "//span[contains(text(),'" + nameContains + "')]/ancestor::tr[1]//span[text()='Del']").when_present(10).exists?)
+        br.element(xpath: "//span[contains(text(),'" + nameContains + "')]/ancestor::tr[1]//span[text()='Del']").when_present.click
+        br.alert.ok
+        sleep 2
+      end
+    rescue
+    ensure
+      set_implicit_wait
+    end
+
   end
 
 end
