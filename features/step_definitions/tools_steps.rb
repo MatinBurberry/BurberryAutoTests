@@ -111,3 +111,24 @@ And(/^I should be able to verify customer search$/) do
   on(Burberry20Page).select_left_link_containing 'CVM Reassignment'
   on(CVMBurberry20Page).verify_customer_search($USER_1, $CUSTOMER_FIRST + ' ' + $CUSTOMER_LAST).should be true
 end
+
+And(/^I should be able to use Supply Chain World link$/) do
+  on(HomePage).select_app 'Burberry World 2.0'
+  on(Burberry20Page).select_left_link_containing 'Tools'
+  on(Burberry20Page).select_left_link_containing 'Supply Chain World'
+  on(ToolsBurberry20Page).verify_supply_chain_world.should be true
+end
+
+And(/^I should be able to use Supply Chain World UAT link$/) do
+  on(HomePage).select_app 'Burberry World 2.0'
+  on(Burberry20Page).select_left_link_containing 'Tools'
+  on(Burberry20Page).select_left_link_containing 'Supply Chain World UAT'
+  on(ToolsBurberry20Page).verify_supply_chain_world_uat.should be true
+end
+
+And(/^I should be able to use Store Pages link$/) do
+  on(HomePage).select_app 'Burberry World 2.0'
+  on(Burberry20Page).select_left_link_containing 'Tools'
+  on(Burberry20Page).select_left_link_containing 'Store Pages'
+  on(ToolsBurberry20Page).verify_store_pages.should be true
+end

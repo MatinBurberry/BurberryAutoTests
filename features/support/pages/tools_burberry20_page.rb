@@ -50,5 +50,25 @@ class ToolsBurberry20Page < Burberry20Page
     br.element(xpath: "//td[contains(text(),'" + $GIFT_DESC + "')]/../td[text()='APPROVED']").exists?
   end
 
+  h2(:search_purchase_orders, xpath: "//h2[text()='Search purchase orders']")
+
+  def verify_supply_chain_world
+    sleep 2
+    search_purchase_orders_element.exists?
+  end
+
+  def verify_supply_chain_world_uat
+    sleep 2
+    br.url.end_with? "scwhomenew"
+  end
+
+  def verify_store_pages
+    sleep 2
+    result = false
+    br.windows.last.use do
+      result =  br.url.include? "sap/public/ap"
+    end
+    result
+  end
 
 end

@@ -46,6 +46,7 @@ def generate_test_data
   $GIFT_DESC = 'Auto Gift' + $UN
 
   $HR_CASE = 'Auto HR Case' + $UN
+  $HR_CASE_NUMBER = ''
 
   $CUSTOMER_FIRST = 'John' + $UN
   $CUSTOMER_LAST = 'Doe' + $UN
@@ -189,11 +190,11 @@ end
 
 After('@corporate_gift') do
   begin
-  on(HomePage).go_to_salesforce
-  on(ToolsPage).delete_corporate_gift $GIFT_DESC
+    on(HomePage).go_to_salesforce
+    on(ToolsPage).delete_corporate_gift $GIFT_DESC
   rescue
-  # .. handle error
-  on(AbstractPage).log_deletion_warning($GIFT_DESC)
+    # .. handle error
+    on(AbstractPage).log_deletion_warning($GIFT_DESC)
   end
 end
 
@@ -207,6 +208,15 @@ After('@cvm') do
   end
 end
 
+After('hr_case') do
+  begin
+    on(HomePage).go_to_salesforce
+    on(HomePage).find_and_delete_item(case_number, 'Ask HR Cases')
+  rescue
+    # .. handle error
+    on(AbstractPage).log_deletion_warning(case_number)
+  end
+end
 
 After do |scenario|
   if scenario.failed?

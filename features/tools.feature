@@ -70,3 +70,14 @@ Feature: Tools feature in Burberry World 2.0
     And I create Customer
     Then I should be able to verify customer search
 
+  @tools
+  Scenario: SFDC-XXX Verify Supply Chain World
+    Then I should be able to use Supply Chain World link
+
+  @tools
+  Scenario: SFDC-XXX Verify Supply Chain World UAT
+    Then I should be able to use Supply Chain World UAT link
+
+  @tools
+  Scenario: SFDC-XXX Verify Store Pages
+    Then I should be able to use Store Pages link

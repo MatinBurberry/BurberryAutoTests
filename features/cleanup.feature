@@ -22,3 +22,7 @@ Feature: Cleanup Feature
   @cleanup
   Scenario: Items Cleanup Customers
     Then Open Page "https://burberry--dev.cs14.my.salesforce.com/001?fcf=00Bc0000001Hnze&rolodexIndex=-1&page=1" and delete items "Doe"
+
+  @cleanup
+  Scenario: Items Cleanup News
+    Then Open Page "https://burberry--dev.cs14.my.salesforce.com/a2C?fcf=00BD0000007UffA" and delete items "Auto News Title"

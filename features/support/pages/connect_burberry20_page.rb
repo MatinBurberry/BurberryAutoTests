@@ -23,9 +23,14 @@ class ConnectBurberry20Page < Burberry20Page
 
     br.element(xpath: "//dd[text()='" + $HR_CASE + "']").when_present
     br.element(xpath: "//dd[text()='" + $HR_CASE + "']/parent::dl/dd/em").text
-
   end
 
+  element(:case_status, "dd", xpath: "//dd[@class='case-status']")
 
+  def get_hr_case_status(case_number)
+    br.element(xpath: "//em[text()='" + case_number + "']").when_present.click
+    case_status_element.when_present
+    case_status_element.text
+  end
 
 end
