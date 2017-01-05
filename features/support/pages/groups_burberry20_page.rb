@@ -12,21 +12,21 @@ class GroupsBurberry20Page < Burberry20Page
   strong(:edit, xpath: "//strong[text()='EDIT']")
 
   def create_group(group, public)
-    create_new_group_element.when_present.click
+    create_new_group_element.wait_until_present.click
     sleep 5
-    group_name_element.when_present.send_keys group
-    group_description_element.when_present.send_keys (group + ' description')
+    group_name_element.wait_until_present.send_keys group
+    group_description_element.wait_until_present.send_keys (group + ' description')
     if public
-      public_radio_element.when_present.select
+      public_radio_element.wait_until_present.select
     else
-      private_radio_element.when_present.select
+      private_radio_element.wait_until_present.select
     end
-    change_thumbnail_element.when_present.click
-    use_element.when_present.click
+    change_thumbnail_element.wait_until_present.click
+    use_element.wait_until_present.click
     sleep 3
-    create_group_element.when_present.click
+    create_group_element.wait_until_present.click
     sleep 5
-    edit_element.when_present
+    edit_element.wait_until_present
   end
 
   li(:media, class: 'media')
@@ -34,9 +34,9 @@ class GroupsBurberry20Page < Burberry20Page
 
   def wait_for_filter_result
     begin
-      media_element.when_present
+      media_element.wait_until_present
     rescue
-      no_results_element.when_present
+      no_results_element.wait_until_present
     end
   end
 
@@ -46,13 +46,13 @@ class GroupsBurberry20Page < Burberry20Page
   div(:my_group_sort_div, id: 'my-groups-sort')
 
   def select_my_groups_filter(filter_name)
-    my_group_filter_div_element.when_present
+    my_group_filter_div_element.wait_until_present
     my_groups_filter_select_element.select(filter_name)
     wait_for_filter_result
   end
 
   def select_my_groups_sorting(sort_name)
-    my_group_sort_div_element.when_present
+    my_group_sort_div_element.wait_until_present
     my_groups_sort_select_element.select(sort_name)
     wait_for_filter_result
   end
@@ -63,13 +63,13 @@ class GroupsBurberry20Page < Burberry20Page
   div(:all_group_sort_div, id: 'all-groups-sort')
 
   def select_all_groups_filter(filter_name)
-    all_group_filter_div_element.when_present
+    all_group_filter_div_element.wait_until_present
     all_groups_filter_select_element.select(filter_name)
     wait_for_filter_result
   end
 
   def select_all_groups_sorting(sort_name)
-    all_group_sort_div_element.when_present
+    all_group_sort_div_element.wait_until_present
     all_groups_sort_select_element.select(sort_name)
     wait_for_filter_result
   end
@@ -102,12 +102,12 @@ class GroupsBurberry20Page < Burberry20Page
     select_left_link_containing 'My Groups'
     select_my_groups_filter 'All my groups'
     select_my_groups_sorting 'Recently Active'
-    br.element(:xpath => "//a[text()='" + group + "']").when_present.click
-    edit_element.when_present.click
+    br.element(:xpath => "//a[text()='" + group + "']").wait_until_present.click
+    edit_element.wait_until_present.click
     sleep 4
-    delete_group_element.when_present.click
-    yes_element.when_present.click
-    create_new_group_element.when_present
+    delete_group_element.wait_until_present.click
+    yes_element.wait_until_present.click
+    create_new_group_element.wait_until_present
   end
 
   def join_group(group)
@@ -123,7 +123,7 @@ class GroupsBurberry20Page < Burberry20Page
     select_left_link_containing 'All Groups'
     select_all_groups_filter 'Private Groups'
     select_all_groups_sorting 'Recently Active'
-    br.element(xpath: "//a[text()='" + group + "']/ancestor::div[@class='cleared']//div[contains(text(),'Membership Requested')]").when_present.exists?
+    br.element(xpath: "//a[text()='" + group + "']/ancestor::div[@class='cleared']//div[contains(text(),'Membership Requested')]").wait_until_present.exists?
   end
 
   link(:manage_members, xpath: "//div[@class='modal-inner']//a[text()='Manage Members']")
@@ -135,35 +135,35 @@ class GroupsBurberry20Page < Burberry20Page
   strong(:accept, xpath: "//strong[text()='Accept']")
 
   def accept_join_to_group_request
-    notifications_element.when_present.click
-    conversation_element.when_present.click
-    accept_element.when_present.click
+    notifications_element.wait_until_present.click
+    conversation_element.wait_until_present.click
+    accept_element.wait_until_present.click
     sleep 2
-    close_manage_members_element.when_present.click
+    close_manage_members_element.wait_until_present.click
     sleep 2
   end
 
   strong(:remove, xpath: "//strong[text()='Remove']")
 
   def verify_user_accepted
-    notifications_element.when_present.click
-    conversation_element.when_present.click
-    manage_members_element.when_present.click
-    owner_span_element.when_present
+    notifications_element.wait_until_present.click
+    conversation_element.wait_until_present.click
+    manage_members_element.wait_until_present.click
+    owner_span_element.wait_until_present
     result = remove_element.exists?
-    close_manage_members_element.when_present.click
+    close_manage_members_element.wait_until_present.click
     result
   end
 
   strong(:ignore, xpath: "//strong[text()='Ignore']")
 
   def ignore_join_to_group_request
-    notifications_element.when_present.click
-    conversation_element.when_present.click
-    ignore_element.when_present.click
+    notifications_element.wait_until_present.click
+    conversation_element.wait_until_present.click
+    ignore_element.wait_until_present.click
     sleep 3
-    manage_members_element.when_present.click
-    owner_span_element.when_present
+    manage_members_element.wait_until_present.click
+    owner_span_element.wait_until_present
     begin
       set_implicit_wait(10)
       result = remove_element.exists?
@@ -172,7 +172,7 @@ class GroupsBurberry20Page < Burberry20Page
     ensure
       set_implicit_wait
     end
-    close_manage_members_element.when_present.click
+    close_manage_members_element.wait_until_present.click
     result
   end
 
@@ -181,23 +181,23 @@ class GroupsBurberry20Page < Burberry20Page
 
   def make_user_a_manager
     sleep 3
-    notifications_element.when_present.click
-    conversation_element.when_present.click
-    manage_members_element.when_present.click
-    manager_checkbox_element.when_present.click
+    notifications_element.wait_until_present.click
+    conversation_element.wait_until_present.click
+    manage_members_element.wait_until_present.click
+    manager_checkbox_element.wait_until_present.click
     sleep 3
-    close_manage_members_element.when_present.click
+    close_manage_members_element.wait_until_present.click
 
   end
 
   def verify_user_is_a_manager
     sleep 3
-    notifications_element.when_present.click
-    conversation_element.when_present.click
-    manage_members_element.when_present.click
-    owner_span_element.when_present
+    notifications_element.wait_until_present.click
+    conversation_element.wait_until_present.click
+    manage_members_element.wait_until_present.click
+    owner_span_element.wait_until_present
     result = manager_checkbox_checked_element.exists?
-    close_manage_members_element.when_present.click
+    close_manage_members_element.wait_until_present.click
     result
   end
 
@@ -210,14 +210,14 @@ class GroupsBurberry20Page < Burberry20Page
     select_left_link_containing 'My Groups'
     select_my_groups_filter 'Private Groups'
     select_my_groups_sorting 'Recently Active'
-    br.element(xpath: "//a[text()='" + group_name + "']").when_present.click
+    br.element(xpath: "//a[text()='" + group_name + "']").wait_until_present.click
     sleep 2
-    manage_group_members_element.when_present.click
-    add_members_element.when_present.click
-    search_members_element.when_present.send_keys user
-    search_members_element.when_present.send_keys :enter
-    br.element(xpath: "//a[contains(text(), '" + user + "')]/..//strong[text()='Add']").when_present.click
-    br.element(xpath: "//a[contains(text(), '" + user + "')]/..//span[text()='Member']").when_present.exists?
+    manage_group_members_element.wait_until_present.click
+    add_members_element.wait_until_present.click
+    search_members_element.wait_until_present.send_keys user
+    search_members_element.wait_until_present.send_keys :enter
+    br.element(xpath: "//a[contains(text(), '" + user + "')]/..//strong[text()='Add']").wait_until_present.click
+    br.element(xpath: "//a[contains(text(), '" + user + "')]/..//span[text()='Member']").wait_until_present.exists?
   end
 
   def delete_all_groups(group)
@@ -225,13 +225,13 @@ class GroupsBurberry20Page < Burberry20Page
     select_left_link_containing 'My Groups'
     select_my_groups_filter 'All my groups'
     select_my_groups_sorting 'Recently Active'
-    while (br.element(:xpath => "//a[contains(text(),'" + group + "')]").when_present.exists?)
-      br.element(:xpath => "//a[contains(text(),'" + group + "')]").when_present.click
-      edit_element.when_present.click
+    while (br.element(:xpath => "//a[contains(text(),'" + group + "')]").wait_until_present.exists?)
+      br.element(:xpath => "//a[contains(text(),'" + group + "')]").wait_until_present.click
+      edit_element.wait_until_present.click
       sleep 4
-      delete_group_element.when_present.click
-      yes_element.when_present.click
-      create_new_group_element.when_present
+      delete_group_element.wait_until_present.click
+      yes_element.wait_until_present.click
+      create_new_group_element.wait_until_present
     end
 
   end

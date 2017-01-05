@@ -18,18 +18,18 @@ class ToolsBurberry20Page < Burberry20Page
   def declare_gift(option)
     sleep 5
     offered_element.select option
-    first_name_element.when_present.send_keys 'John'
-    last_name_element.when_present.send_keys 'Doe'
-    organization_element.when_present.send_keys 'Auto Test LTD'
+    first_name_element.wait_until_present.send_keys 'John'
+    last_name_element.wait_until_present.send_keys 'Doe'
+    organization_element.wait_until_present.send_keys 'Auto Test LTD'
     gift_hospitality_element.select 'Gift'
-    date_element.when_present.click
-    first_date_element.when_present.click
-    description_element.when_present.send_keys $GIFT_DESC
-    value_element.when_present.send_keys '100'
-    submit_element.when_present.click
-    message_element.when_present
-    ok_element.when_present.click
-    br.element(xpath: "//dd[text()='" + $GIFT_DESC + "']").when_present
+    date_element.wait_until_present.click
+    first_date_element.wait_until_present.click
+    description_element.wait_until_present.send_keys $GIFT_DESC
+    value_element.wait_until_present.send_keys '100'
+    submit_element.wait_until_present.click
+    message_element.wait_until_present
+    ok_element.wait_until_present.click
+    br.element(xpath: "//dd[text()='" + $GIFT_DESC + "']").wait_until_present
   end
 
   def verify_gift_received
@@ -41,8 +41,8 @@ class ToolsBurberry20Page < Burberry20Page
 
   def delete_declaration(description)
     br.element(xpath: "//td[contains(text(),'" + description + "')]").click
-    br.element(xpath: "//td[contains(text(),'" + description + "')]//strong[text()='DELETE']").when_present.click
-    delete_confirm_element.when_present.click
+    br.element(xpath: "//td[contains(text(),'" + description + "')]//strong[text()='DELETE']").wait_until_present.click
+    delete_confirm_element.wait_until_present.click
   end
 
   def verify_gift_status(status)

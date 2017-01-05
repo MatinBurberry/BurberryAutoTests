@@ -42,10 +42,10 @@ class AbstractPage
     search_field_element.when_present.send_keys item
     find_element.when_present.click
     begin
-      br.element(xpath: "//span[contains(text(),'" + category + "')]/ancestor::div[@class='bPageBlock brandSecondaryBrd secondaryPalette']//a[contains(text(), '" + item + "')]").when_present.click
+      br.element(xpath: "//span[contains(text(),'" + category + "')]/ancestor::div[@class='bPageBlock brandSecondaryBrd secondaryPalette']//a[contains(text(), '" + item + "')]").wait_until_present.click
     rescue
       search_all_element.when_present.click
-      br.element(xpath: "//span[contains(text(),'" + category + "')]/ancestor::div[@class='bPageBlock brandSecondaryBrd secondaryPalette']//a[contains(text(), '" + item + "')]").when_present.click
+      br.element(xpath: "//span[contains(text(),'" + category + "')]/ancestor::div[@class='bPageBlock brandSecondaryBrd secondaryPalette']//a[contains(text(), '" + item + "')]").wait_until_present.click
     end
   end
 
@@ -90,8 +90,8 @@ class AbstractPage
     br.goto link
     begin
       set_implicit_wait 15
-      while (br.element(xpath: "//span[contains(text(),'" + nameContains + "')]/ancestor::tr[1]//span[text()='Del']").when_present(15).exists?)
-        br.element(xpath: "//span[contains(text(),'" + nameContains + "')]/ancestor::tr[1]//span[text()='Del']").when_present.click
+      while (br.element(xpath: "//span[contains(text(),'" + nameContains + "')]/ancestor::tr[1]//span[text()='Del']").wait_until_present(15).exists?)
+        br.element(xpath: "//span[contains(text(),'" + nameContains + "')]/ancestor::tr[1]//span[text()='Del']").wait_until_present.click
         br.alert.ok
         sleep 2
       end

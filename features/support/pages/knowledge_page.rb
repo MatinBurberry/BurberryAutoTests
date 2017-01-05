@@ -12,48 +12,49 @@
 
   def create_knowledge_category(tier, type)
     if tier == $KNOWLEDGE_CATEGORY_1
-      new_element.when_present.click
-      tier_element.when_present.select 'Tier 1'
+      new_element.wait_until_present.click
+      tier_element.wait_until_present.select 'Tier 1'
     else
-      new_knowledge_category_element.when_present.click
+      new_knowledge_category_element.wait_until_present.click
       if tier == $KNOWLEDGE_CATEGORY_2
-        tier_element.when_present.select 'Tier 2'
+        tier_element.wait_until_present.select 'Tier 2'
       else
-        tier_element.when_present.select 'Tier 3'
+        tier_element.wait_until_present.select 'Tier 3'
       end
     end
-    continue_element.when_present.click
+    continue_element.wait_until_present.click
     if tier == $KNOWLEDGE_CATEGORY_1
-      type_element.when_present.select type
+      type_element.wait_until_present.select type
     end
-    category_name_element.when_present.send_keys tier
-    save_element.when_present.click
+    category_name_element.wait_until_present.send_keys tier
+    save_element.wait_until_present.click
     select_content_element.when_present
     if tier == $KNOWLEDGE_CATEGORY_2
       open_windows = br.windows.size
-      select_content_element.when_present.click
+      select_content_element.wait_until_present.click
       wait_for_new_window(open_windows, 30)
       br.window(index: br.windows.size-1).use do
         sleep 3
-        london_big_ben_element.when_present.click
+        london_big_ben_element.wait_until_present.click
       end
       sleep 5
     end
   end
 
   button(:attach_file, :value => 'Attach File')
-  button(:browse, :id => 'file')
+  button(:browse, id: 'file')
   button(:attach_selected, :id => 'Attach')
   button(:done, :name => 'cancel', :value => ' Done ')
 
   def attach_text_file
-    attach_file_element.when_present.click
-    #browse_element.when_present.send_keys (get_base_dir + 'test_data\policy.txt')
+    attach_file_element.wait_until_present.click
+    #browse_element.wait_until_present.send_keys (get_base_dir + 'test_data\policy.txt')
     full_path = get_base_dir + 'test_data\policy.txt'
-    browse_element.when_present.send_keys full_path
-    attach_selected_element.when_present.click
+    br.element(xpath: "//input[@id='file']").wait_until_present.send_keys(full_path)
+    #browse_element.wait_until_present.send_keys full_path
+    attach_selected_element.wait_until_present.click
     sleep 5
-    done_element.when_present.click
+    done_element.wait_until_present.click
   end
 
   checkbox(:policy, :xpath => "//input[contains(@id,'policyCheckbox')]")
@@ -71,9 +72,9 @@
 
   def create_policy_to_accept
     attach_text_file
-    policy_element.when_present.check
+    policy_element.wait_until_present.set
     sleep 5
-    save_changes_element.when_present.click
+    save_changes_element.wait_until_present.click
   end
 
   def create_knowledge_category_1_2(type)

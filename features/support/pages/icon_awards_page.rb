@@ -4,8 +4,8 @@ class IconAwardsPage < AbstractPage
   text_field(:set_name, id: 'Name')
 
   def create_faq_set
-    new_element.when_present.click
-    set_name_element.when_present.send_keys $AWARD_FAQ_SET
+    new_element.wait_until_present.click
+    set_name_element.wait_until_present.send_keys $AWARD_FAQ_SET
     save_element.click
     delete_element.when_visible
   end
@@ -23,17 +23,17 @@ class IconAwardsPage < AbstractPage
   button(:go, name: 'go')
 
   def make_award_cycles_inactive_and_not_archived
-    view_element.when_present.select 'All'
-    go_element.when_present.click
+    view_element.wait_until_present.select 'All'
+    go_element.wait_until_present.click
     begin
       set_implicit_wait(5)
       active = br.elements(xpath: "//img[@class='checkImg'][@title='Checked']/../../..//span[text()='Edit']/parent::a")
       active.size.times do
-        br.element(xpath: "//img[@class='checkImg'][@title='Checked']/../../..//span[text()='Edit']/parent::a").when_present.click
-        active_element.when_present.uncheck
-        archived_element.when_present.uncheck
+        br.element(xpath: "//img[@class='checkImg'][@title='Checked']/../../..//span[text()='Edit']/parent::a").wait_until_present.click
+        active_element.wait_until_present.uncheck
+        archived_element.wait_until_present.uncheck
         sleep 1
-        save_element.when_present.click
+        save_element.wait_until_present.click
       end
     rescue
       set_implicit_wait
@@ -41,8 +41,8 @@ class IconAwardsPage < AbstractPage
   end
 
   def create_award_cycle
-    new_element.when_present.click
-    chat_link_text_element.when_present.send_keys $AWARD_CYCLE
+    new_element.wait_until_present.click
+    chat_link_text_element.wait_until_present.send_keys $AWARD_CYCLE
     year_element.send_keys '2016'
     faq_set_element.send_keys $AWARD_FAQ_SET
     active_element.check
@@ -60,18 +60,18 @@ class IconAwardsPage < AbstractPage
   button(:upload, value: 'Upload')
 
   def create_award_category
-    new_award_category_element.when_present.click
-    category_element.when_present.send_keys $AWARD_CATEGORY
+    new_award_category_element.wait_until_present.click
+    category_element.wait_until_present.send_keys $AWARD_CATEGORY
     save_element.click
-    upload_thumbnail_element.when_present.click
+    upload_thumbnail_element.wait_until_present.click
     sleep 5
-    br.element(xpath: "//input[@type='file']").when_present.send_keys (get_base_dir + 'test_data\qc.jpg')
-    upload_element.when_present.click
-    upload_winner_image_element.when_present.click
+    br.element(xpath: "//input[@type='file']").wait_until_present.send_keys (get_base_dir + 'test_data\qc.jpg')
+    upload_element.wait_until_present.click
+    upload_winner_image_element.wait_until_present.click
     sleep 5
-    br.element(xpath: "//input[@type='file']").when_present.send_keys (get_base_dir + 'test_data\winner.png')
-    upload_element.when_present.click
-    upload_winner_image_element.when_present
+    br.element(xpath: "//input[@type='file']").wait_until_present.send_keys (get_base_dir + 'test_data\winner.png')
+    upload_element.wait_until_present.click
+    upload_winner_image_element.wait_until_present
   end
 
   button(:new_award_region, title: 'New Award Region')
@@ -80,8 +80,8 @@ class IconAwardsPage < AbstractPage
   text_field(:winners_announced_date, xpath: "//label[text()='Winners Announced Date']/ancestor::td/following-sibling::td[1]//input")
 
   def create_award_region_finalists(region)
-    new_award_region_element.when_present.click
-    region_name_element.when_present.send_keys region
+    new_award_region_element.wait_until_present.click
+    region_name_element.wait_until_present.send_keys region
     finalists_announced_date_element.send_keys date_offset(-1)
     winners_announced_date_element.send_keys date_offset(2)
     save_element.click
@@ -91,14 +91,14 @@ class IconAwardsPage < AbstractPage
   select_list(:status, xpath: "//label[text()='Status']/ancestor::td/following-sibling::td[1]//select")
 
   def announce_finalist(name)
-    br.element(xpath: "//a[@title='Edit - Record 1 - " + name + "']").when_present.click
-    status_element.when_present.select('Finalist')
-    save_element.when_present.click
+    br.element(xpath: "//a[@title='Edit - Record 1 - " + name + "']").wait_until_present.click
+    status_element.wait_until_present.select('Finalist')
+    save_element.wait_until_present.click
     delete_element.when_visible
   end
 
   def edit_award_region_winners(region)
-    br.element(xpath: "//a[@title='Edit - Record 1 - " + region + "']").when_present.click
+    br.element(xpath: "//a[@title='Edit - Record 1 - " + region + "']").wait_until_present.click
     winners_announced_date_element.clear
     winners_announced_date_element.send_keys date_offset(-1)
     save_element.click
@@ -106,17 +106,17 @@ class IconAwardsPage < AbstractPage
   end
 
   def announce_winner(name)
-    br.element(xpath: "//a[@title='Edit - Record 1 - " + name + "']").when_present.click
-    status_element.when_present.select('Winner')
-    save_element.when_present.click
+    br.element(xpath: "//a[@title='Edit - Record 1 - " + name + "']").wait_until_present.click
+    status_element.wait_until_present.select('Winner')
+    save_element.wait_until_present.click
     delete_element.when_visible
   end
 
   def archive_cycle(name)
     find_item(name, 'Award Cycles')
-    edit_element.when_present.click
-    archived_element.when_present.check
-    save_element.when_present.click
+    edit_element.wait_until_present.click
+    archived_element.wait_until_present.check
+    save_element.wait_until_present.click
   end
 
 end

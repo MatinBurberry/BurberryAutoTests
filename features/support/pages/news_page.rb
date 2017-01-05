@@ -18,13 +18,13 @@ class NewsPage < AbstractPage
     tags_element.when_present.send_keys 'auto test'
     status_element.when_present.select 'Published'
     if public
-      public_element.when_present.check
+      public_element.when_present.set
     end
     if featured
-      featured_element.when_present.check
+      featured_element.when_present.set
     end
     if enable_chat
-      enable_chat_element.when_present.check
+      enable_chat_element.when_present.set
     end
 
     sleep 3

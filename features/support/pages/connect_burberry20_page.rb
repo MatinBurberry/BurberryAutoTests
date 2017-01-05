@@ -10,26 +10,26 @@ class ConnectBurberry20Page < Burberry20Page
 
   def raise_new_case(type, sub_type)
     sleep 5
-    raise_a_new_case_element.when_present.click
+    raise_a_new_case_element.wait_until_present.click
 
-    subject_element.when_present
+    subject_element.wait_until_present
 
     type_element.select type
     sub_type_element.select sub_type
 
-    subject_element.when_present.send_keys $HR_CASE
-    description_element.when_present.send_keys 'Auto HR description'
-    submit_element.when_present.click
+    subject_element.wait_until_present.send_keys $HR_CASE
+    description_element.wait_until_present.send_keys 'Auto HR description'
+    submit_element.wait_until_present.click
 
-    br.element(xpath: "//dd[text()='" + $HR_CASE + "']").when_present
+    br.element(xpath: "//dd[text()='" + $HR_CASE + "']").wait_until_present
     br.element(xpath: "//dd[text()='" + $HR_CASE + "']/parent::dl/dd/em").text
   end
 
   element(:case_status, "dd", xpath: "//dd[@class='case-status']")
 
   def get_hr_case_status(case_number)
-    br.element(xpath: "//em[text()='" + case_number + "']").when_present.click
-    case_status_element.when_present
+    br.element(xpath: "//em[text()='" + case_number + "']").wait_until_present.click
+    case_status_element.wait_until_present
     case_status_element.text
   end
 

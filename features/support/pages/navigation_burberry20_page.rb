@@ -8,11 +8,11 @@ class NavigationBurberry20Page < Burberry20Page
 
   def verify_dashboard_page
     sections = Array['News', 'Trending Topics', 'BURBERRY ON TWITTER', 'QUICK LINKS', 'Recommended People', 'WORLD CLOCK']
-    burberry_logo_element.when_present.exists?
+    burberry_logo_element.wait_until_present.exists?
     sections.size.times do |i|
-      br.element(xpath: "//h2[text()='" + sections[i] + "']").when_present.exists?
+      br.element(xpath: "//h2[text()='" + sections[i] + "']").wait_until_present.exists?
     end
-    message_area_element.when_present.exists?
+    message_area_element.wait_until_present.exists?
     dashboard_select_element.exists?
     sort_by_select_element.exists?
   end
@@ -26,9 +26,9 @@ class NavigationBurberry20Page < Burberry20Page
   select_list(:all_groups_sort_select, :xpath => "//div[@id='all-groups-sort']/select")
 
   def verify_groups_page
-    br.element(:xpath => "//div[@id='tab-MyGroups']//strong[text()='Create New Group']").when_present.exists?
-    my_groups_element.when_present.exists?
-    all_groups_element.when_present.exists?
+    br.element(:xpath => "//div[@id='tab-MyGroups']//strong[text()='Create New Group']").wait_until_present.exists?
+    my_groups_element.wait_until_present.exists?
+    all_groups_element.wait_until_present.exists?
     my_groups_filter_select_element.exists?
     my_groups_sort_select_element.exists?
     all_groups_element.click
@@ -40,10 +40,10 @@ class NavigationBurberry20Page < Burberry20Page
   link(:retail, xpath: "//a[contains(text(),'Retail')]")
 
   def verify_knowledge_page
-    policies_element.when_present.click
-    br.element(xpath: "//h2[text()='Policies Knowledge']").when_present.exists?
-    retail_element.when_present.click
-    br.element(xpath: "//h2[text()='Retail Knowledge']").when_present.exists?
+    policies_element.wait_until_present.click
+    br.element(xpath: "//h2[text()='Policies Knowledge']").wait_until_present.exists?
+    retail_element.wait_until_present.click
+    br.element(xpath: "//h2[text()='Retail Knowledge']").wait_until_present.exists?
   end
 
   h3(:tags, text: 'Tags')
@@ -51,9 +51,9 @@ class NavigationBurberry20Page < Burberry20Page
   h2(:news_section, xpath: "//h2[contains(text(),'News')]")
 
   def verify_news_page
-    tags_element.when_present.exists?
-    all_news_element.when_present.exists?
-    news_section_element.when_present.exists?
+    tags_element.wait_until_present.exists?
+    all_news_element.wait_until_present.exists?
+    news_section_element.wait_until_present.exists?
   end
 
   h2(:foundation_section, xpath: "//h2[contains(text(),'Foundation Background')]")
@@ -64,11 +64,11 @@ class NavigationBurberry20Page < Burberry20Page
   select_list(:foundation_filter_select, :xpath => "//div[@class='js-select-field select-field ']/select")
 
   def verify_foundation_page
-    foundation_section_element.when_present.exists?
-    volunteering_opportunities_section_element.when_present.exists?
-    text1_element.when_present.exists?
-    text2_element.when_present.exists?
-    find_out_more_element.when_present.exists?
+    foundation_section_element.wait_until_present.exists?
+    volunteering_opportunities_section_element.wait_until_present.exists?
+    text1_element.wait_until_present.exists?
+    text2_element.wait_until_present.exists?
+    find_out_more_element.wait_until_present.exists?
     foundation_filter_select_element.exists?
   end
 
