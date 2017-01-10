@@ -21,7 +21,7 @@ class CVMBurberry20Page < Burberry20Page
   end
 
   def select_sa(sa)
-    br.element(xpath: "//div[contains(text(),'" + sa + "')]").wait_until_present.click
+    br.element(xpath: "//div[contains(text(),'" + sa + "')]").when_present.click
     sleep 2
     #br.element(xpath: "/div[contains(text(),'" + sa + "')]/parent::div[contains(@class, 'element-highlighted')]").wait_until_present
   end
@@ -29,15 +29,15 @@ class CVMBurberry20Page < Burberry20Page
   def verify_customer_assignment(sa, customer)
     select_sa sa
     sort_customers 'Descending (Z-A)'
-    br.element(xpath: "//strong[contains(text(),'" + customer + "')]").wait_until_present.exists?
+    br.element(xpath: "//strong[contains(text(),'" + customer + "')]").when_present.exists?
   end
 
   def verify_customer_info(sa, customer)
     select_sa sa
     sort_customers 'Descending (Z-A)'
-    result = br.element(xpath: "//strong[contains(text(),'" + customer + "')]").wait_until_present.exists?
-    result && br.element(xpath: "//strong[contains(text(),'" + customer + "')]/../div[text()='Paris, France']").wait_until_present.exists?
-    result && br.element(xpath: "//strong[contains(text(),'" + customer + "')]/../div[text()='Classic, Exited, £ 1,500']").wait_until_present.exists?
+    result = br.element(xpath: "//strong[contains(text(),'" + customer + "')]").when_present.exists?
+    result && br.element(xpath: "//strong[contains(text(),'" + customer + "')]/../div[text()='Paris, France']").when_present.exists?
+    result && br.element(xpath: "//strong[contains(text(),'" + customer + "')]/../div[text()='Classic, Exited, £ 1,500']").when_present.exists?
   end
 
   button(:reassign_customer, xpath: "//input[@class='reassign-btn']")
@@ -50,22 +50,22 @@ class CVMBurberry20Page < Burberry20Page
   def reassign_customer(user_from, user_to, customer)
     select_sa user_from
     sort_customers 'Descending (Z-A)'
-    br.element(xpath: "//strong[contains(text(),'" + customer + "')]/../../input").wait_until_present.click
+    br.element(xpath: "//strong[contains(text(),'" + customer + "')]/../../input").when_present.click
     reassign_customer_element.click
-    notification_element.wait_until_present
+    notification_element.when_present
     to_element.select user_to
     sleep 2
     for_element.select 'Other'
     sleep 2
-    confirm_element.wait_until_present.click
+    confirm_element.when_present.click
     sleep 2
-    back_to_home_page_element.wait_until_present.click
+    back_to_home_page_element.when_present.click
   end
 
   def verify_reassignment_history(sa_from, sa_to, customer)
     select_sa sa_to
     sort_customers 'Descending (Z-A)'
-    br.element(xpath: "//strong[contains(text(),'" + customer + "')]").wait_until_present.click
+    br.element(xpath: "//strong[contains(text(),'" + customer + "')]").when_present.click
     sleep 2
     begin
       br.element(xpath: "//td[contains(text(),'" + sa_from + "')]/following-sibling::td[contains(text(),'" + sa_to + "')]/following-sibling::td[contains(text(),'" + date_offset_formatted(0, "%d/%m/%Y") + "')]").exists?
@@ -80,7 +80,7 @@ class CVMBurberry20Page < Burberry20Page
 
   def verify_no_selected_customer_message
     reassign_customer_element.click
-    select_customer_message_element.wait_until_present.exists?
+    select_customer_message_element.when_present.exists?
   end
 
   span(:reassign_message, xpath: "//span[text()='Customers should be re-assigned only in case of sales associates leaving the business or for exceptional reasons such as long term leave; please make sure you limit the number of times customers get re-assigned.']")
@@ -88,14 +88,14 @@ class CVMBurberry20Page < Burberry20Page
   def verify_reassign_message(user_from, customer)
     select_sa user_from
     sort_customers 'Descending (Z-A)'
-    br.element(xpath: "//strong[contains(text(),'" + customer + "')]/../../input").wait_until_present.click
+    br.element(xpath: "//strong[contains(text(),'" + customer + "')]/../../input").when_present.click
     reassign_customer_element.click
-    reassign_message_element.wait_until_present.exists?
+    reassign_message_element.when_present.exists?
   end
 
   def get_number_of_customers(sa)
     sleep 4
-    br.element(xpath: "//div[contains(text(),'" + sa + "')]/..//span[contains(@class,'bar-size')]").wait_until_present.text
+    br.element(xpath: "//div[contains(text(),'" + sa + "')]/..//span[contains(@class,'bar-size')]").when_present.text
   end
 
   def verify_number_of_customers(sa, number_before)
@@ -126,7 +126,7 @@ class CVMBurberry20Page < Burberry20Page
     status_element.select 'Exited'
     sleep 2
     sort_customers 'Descending (Z-A)'
-    br.element(xpath: "//strong[contains(text(),'" + customer + "')]").wait_until_present.exists?
+    br.element(xpath: "//strong[contains(text(),'" + customer + "')]").when_present.exists?
   end
 
   text_field(:search_customer, xpath: "//div[text()='SEARCH CUSTOMER']/..//input")
@@ -138,7 +138,7 @@ class CVMBurberry20Page < Burberry20Page
     search_customer_element.send_keys customer
     search_customer_button_element.click
     sleep 2
-    br.element(xpath: "//strong[contains(text(),'" + customer + "')]").wait_until_present.exists?
+    br.element(xpath: "//strong[contains(text(),'" + customer + "')]").when_present.exists?
   end
 
 

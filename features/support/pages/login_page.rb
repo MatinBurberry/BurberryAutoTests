@@ -17,10 +17,10 @@ class LoginPage < AbstractPage
 
   def logout_from_system
     go_to_salesforce
-    user_label_element.wait_until_present.click
-    logout_element.wait_until_present.click
-    sleep 2
+    user_label_element.when_present.click
+    logout_element.when_present.click
+    br.wait_until{browser.url.eql?("https://www.salesforce.com/")}
     br.goto (FigNewton.base_url)
-    username_element.wait_until_present
+    username_element.when_present
   end
 end

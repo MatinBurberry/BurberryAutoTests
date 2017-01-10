@@ -4,8 +4,8 @@ class RetailCasesPage < AbstractPage
   text_field(:set_name, id: 'Name')
 
   def create_retail_vendor
-    new_element.wait_until_present.click
-    set_name_element.wait_until_present.send_keys $RETAIL_VENDOR
+    new_element.when_present.click
+    set_name_element.when_present.send_keys $RETAIL_VENDOR
     save_element.click
     edit_element.when_visible
   end
@@ -17,29 +17,29 @@ class RetailCasesPage < AbstractPage
   text_field(:vendor, xpath: "//label[text()='Vendor']/ancestor::td/following-sibling::td[1]//span/input")
 
   def create_retail_case(status)
-    new_element.wait_until_present.click
-    tier_element.wait_until_present.select 'Retail'
-    continue_element.wait_until_present.click
-    subject_element.wait_until_present.send_keys $RETAIL_CASE
-    status_select_element.wait_until_present.select status
-    vendor_element.wait_until_present.send_keys $RETAIL_VENDOR
+    new_element.when_present.click
+    tier_element.when_present.select 'Retail'
+    continue_element.when_present.click
+    subject_element.when_present.send_keys $RETAIL_CASE
+    status_select_element.when_present.select status
+    vendor_element.when_present.send_keys $RETAIL_VENDOR
     save_element.click
-    br.element(xpath: "//div[@title='" + $RETAIL_CASE + "']").wait_until_present
+    br.element(xpath: "//div[@title='" + $RETAIL_CASE + "']").when_present
   end
 
   link(:case_number, xpath: "//div[@class='rstitle']/a")
 
   def get_case_number
     find_item($RETAIL_CASE, 'Cases')
-    case_number_element.wait_until_present.text
+    case_number_element.when_present.text
   end
 
   link(:details, xpath: "//span[text()='Details']/ancestor::a")
 
   def find_and_delete_case(item, category)
     find_item(item, category)
-    details_element.wait_until_present.click
-    delete_element.wait_until_present.click
+    details_element.when_present.click
+    delete_element.when_present.click
     br.alert.ok
     sleep 2
   end

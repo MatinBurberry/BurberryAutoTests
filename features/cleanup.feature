@@ -26,6 +26,3 @@ Feature: Cleanup Feature
   @cleanup
   Scenario: Items Cleanup News
     Then Open Page "https://burberry--dev.cs14.my.salesforce.com/a2C?fcf=00BD0000007UffA" and delete items "Auto News Title"
-
-  Scenario: Cleanup
-    Then Open My Groups and delete them

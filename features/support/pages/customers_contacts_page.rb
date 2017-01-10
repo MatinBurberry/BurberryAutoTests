@@ -12,16 +12,16 @@ class CustomersContactsPage < AbstractPage
 
 
   def create_customer
-    new_element.wait_until_present.click
-    record_type_element.wait_until_present.select 'Person Account'
-    continue_element.wait_until_present.click
-    salutation_element.wait_until_present.select 'Mr.'
-    first_name_element.wait_until_present.send_keys $CUSTOMER_FIRST
-    last_name_element.wait_until_present.send_keys $CUSTOMER_LAST
-    store_element.wait_until_present.send_keys 'Heathrow Airport T5 London'
-    mailing_city_element.wait_until_present.send_keys 'Paris'
-    mailing_country_element.wait_until_present.send_keys 'France'
-    phone_element.wait_until_present.send_keys '33149527000'
+    new_element.when_present.click
+    record_type_element.when_present.select 'Person Account'
+    continue_element.when_present.click
+    salutation_element.when_present.select 'Mr.'
+    first_name_element.when_present.send_keys $CUSTOMER_FIRST
+    last_name_element.when_present.send_keys $CUSTOMER_LAST
+    store_element.when_present.send_keys 'Heathrow Airport T5 London'
+    mailing_city_element.when_present.send_keys 'Paris'
+    mailing_country_element.when_present.send_keys 'France'
+    phone_element.when_present.send_keys '33149527000'
     save_element.click
   end
 
@@ -37,22 +37,22 @@ class CustomersContactsPage < AbstractPage
   text_field(:previous_sa_name, xpath: "//label[text()='Previous SA Name']/ancestor::td/following-sibling::td[1]//input[@type='text']")
 
   def create_cvm_info
-    new_cvm_info_element.wait_until_present.click
-    customer_type_element.wait_until_present.select 'New'
-    assigned_sa_element.wait_until_present.send_keys $USER_1
-    ltv_element.wait_until_present.send_keys '1500'
-    reason_code_element.wait_until_present.send_keys '04'
-    reason_description_element.wait_until_present.send_keys 'Left Business'
-    status_element.wait_until_present.select 'Exited'
-    store_id_element.wait_until_present.send_keys '1136'
-    tier_element.wait_until_present.select 'Classic'
-    previous_sa_name_element.wait_until_present.send_keys $USER_2
+    new_cvm_info_element.when_present.click
+    customer_type_element.when_present.select 'New'
+    assigned_sa_element.when_present.send_keys $USER_1
+    ltv_element.when_present.send_keys '1500'
+    reason_code_element.when_present.send_keys '04'
+    reason_description_element.when_present.send_keys 'Left Business'
+    status_element.when_present.select 'Exited'
+    store_id_element.when_present.send_keys '1136'
+    tier_element.when_present.select 'Classic'
+    previous_sa_name_element.when_present.send_keys $USER_2
     save_element.click
   end
 
   def delete_corporate_gift(item)
     find_corporate_gift(item)
-    delete_element.wait_until_present.click
+    delete_element.when_present.click
     br.alert.ok
     sleep 2
   end
@@ -60,8 +60,8 @@ class CustomersContactsPage < AbstractPage
 
   def approve_corporate_gift_received(item)
     find_corporate_gift(item)
-    edit_element.wait_until_present.click
-    approval_status_element.wait_until_present.select 'Approved'
+    edit_element.when_present.click
+    approval_status_element.when_present.select 'Approved'
     save_element.click
     sleep 2
   end
@@ -70,8 +70,8 @@ class CustomersContactsPage < AbstractPage
 
   def approve_corporate_gift_given(item)
     find_corporate_gift(item)
-    edit_element.wait_until_present.click
-    approval_status_element.wait_until_present.select 'Approved'
+    edit_element.when_present.click
+    approval_status_element.when_present.select 'Approved'
     burberry_product_code_element.send_keys '200'
     save_element.click
     sleep 2

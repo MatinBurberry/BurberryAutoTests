@@ -10,19 +10,19 @@ class IconAwardsBurberry20Page < Burberry20Page
 
   def nominate(category, nominant)
     sleep 10
-    nominate_element.wait_until_present.click
-    category_element.wait_until_present.select(category)
+    nominate_element.when_present.click
+    category_element.when_present.select(category)
     nominant_element.send_keys nominant
     nominant_element.click
-    br.element(xpath: "//div[@class='js-individual-fieldset']//p[text()='" + nominant + "']").wait_until_present.click
+    br.element(xpath: "//div[@class='js-individual-fieldset']//p[text()='" + nominant + "']").when_present.click
     reason_element.send_keys 'Automation test reason for nomination should be at least 50 characters long.'
-    nominate_save_element.wait_until_present.click
-    br.element(xpath: "//p[text()='Thank you for your nomination']").wait_until_present
+    nominate_save_element.when_present.click
+    br.element(xpath: "//p[text()='Thank you for your nomination']").when_present
   end
 
   def nominate_no_post(category, nominant)
     nominate(category, nominant)
-    close_element.wait_until_present.click
+    close_element.when_present.click
   end
 
   link(:tell_followers, text: 'Tell your followers about the awards')
@@ -31,54 +31,54 @@ class IconAwardsBurberry20Page < Burberry20Page
 
   def nominate_and_post(category, nominant)
     nominate(category, nominant)
-    tell_followers_element.wait_until_present.click
-    nomination_message_element.wait_until_present
-    post_to_profile_element.wait_until_present.click
-    close_element.wait_until_present.click
+    tell_followers_element.when_present.click
+    nomination_message_element.when_present
+    post_to_profile_element.when_present.click
+    close_element.when_present.click
     sleep 3
   end
 
   def nominate_check_description(category, nominant)
     sleep 10
-    nominate_element.wait_until_present.click
-    category_element.wait_until_present.select(category)
+    nominate_element.when_present.click
+    category_element.when_present.select(category)
     nominant_element.send_keys nominant
     sleep 5
-    br.element(xpath: "//div[@class='js-individual-fieldset']//p[text()='" + nominant + "']").wait_until_present.click
+    br.element(xpath: "//div[@class='js-individual-fieldset']//p[text()='" + nominant + "']").when_present.click
     reason_element.send_keys 'Automation test less than 50 characters (49 char)'
-    actual = br.element(xpath: "//label[@class='js-word-count input-label input-label-error input-label-info']").wait_until_present.text
-    close_element.wait_until_present.click
+    actual = br.element(xpath: "//label[@class='js-word-count input-label input-label-error input-label-info']").when_present.text
+    close_element.when_present.click
     actual
   end
 
   def get_finalist_name(name)
-    br.element(link: name).wait_until_present.click
-    br.element(xpath: "//dt[text()='" + name + "']").wait_until_present.text
+    br.element(link: name).when_present.click
+    br.element(xpath: "//dt[text()='" + name + "']").when_present.text
   end
 
   def get_winner_name(category, name)
-    br.element(xpath: "//h3[contains(text(),'" + category + "')]").wait_until_present.click
-    br.element(link: name).wait_until_present.click
-    br.element(xpath: "//dt[text()='" + name + "']").wait_until_present.text
+    br.element(xpath: "//h3[contains(text(),'" + category + "')]").when_present.click
+    br.element(link: name).when_present.click
+    br.element(xpath: "//dt[text()='" + name + "']").when_present.text
   end
 
   def verify_winner_image(category)
-    br.element(xpath: "//h3[contains(text(),'" + category + "')]").wait_until_present.click
+    br.element(xpath: "//h3[contains(text(),'" + category + "')]").when_present.click
     sleep 3
     br.execute_script("return (typeof arguments[0].naturalWidth!=\"undefined\" && arguments[0].naturalWidth>0)", br.image(xpath: "//div[@class='awards-winner-image']//img"))
   end
 
   def get_icon_awards_widget_name
-    br.element(xpath: "//h2[text()='Icon Awards 2016']").wait_until_present.text
+    br.element(xpath: "//h2[text()='Icon Awards 2016']").when_present.text
   end
 
   h1(:archive_title, xpath: "//h1[text()='Icon Awards Archive']")
   h3(:category_item, xpath: "//div[@class='category-content']//h3")
 
   def verify_archive(category, winner)
-    result = archive_title_element.wait_until_present.exists?
-    result && category_item_element.wait_until_present.exists?
-    result && br.element(xpath: "//div[@class='category-content']//h3[text()='" + category + "']").wait_until_present.exists?
+    result = archive_title_element.when_present.exists?
+    result && category_item_element.when_present.exists?
+    result && br.element(xpath: "//div[@class='category-content']//h3[text()='" + category + "']").when_present.exists?
     result && br.element(xpath: "//p[text()='" + winner + "']").exists?
   end
 
@@ -86,8 +86,8 @@ class IconAwardsBurberry20Page < Burberry20Page
   p(:nominations_open, xpath: "//p[text()='Nominations open']")
 
   def verify_FAQ
-    result = law_message_element.wait_until_present.exists?
-    result && nominations_open_element.wait_until_present.exists?
+    result = law_message_element.when_present.exists?
+    result && nominations_open_element.when_present.exists?
   end
 
 end

@@ -28,6 +28,7 @@ Feature: Groups feature in Burberry World 2.0
     And I can make user a group manager
     Then As a manager I can invite other users to group
 
-
+  Scenario: Cleanup
+    Then Open My Groups and delete them
 
 

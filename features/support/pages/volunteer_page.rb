@@ -13,22 +13,22 @@ class VolunteerPage < AbstractPage
   select_list(:country, xpath: "//label[text()='Country']/ancestor::td/following-sibling::td[1]//select")
 
   def create_volunteer_activity
-    new_element.wait_until_present.click
-    set_name_element.wait_until_present.send_keys $VOLUNTEER_ACTIVITY
-    activity_category_element.wait_until_present.select ('Other CI Activity')
-    duration_element.send_keys '1'
+    new_element.when_present.click
+    set_name_element.when_present.send_keys $VOLUNTEER_ACTIVITY
+    activity_category_element.when_present.select ('Other CI Activity')
+    duration_element.send_keys '24'
     start_date_element.send_keys (date_offset_formatted(2, "%d/%m/%Y %H:%M"))
     status_element.select 'Available'
     sleep 2
     frame_one = br.iframe(:xpath => "//iframe[@class='cke_wysiwyg_frame cke_reset']")
     frame_one.element(xpath: "//body").click
-    frame_one.element(xpath: "//body").wait_until_present.send_keys 'Auto Volunteer Activity Description'
+    frame_one.element(xpath: "//body").when_present.send_keys 'Auto Volunteer Activity Description'
 
-    volunteer_organization_element.wait_until_present.send_keys $VOLUNTEER_ORGANIZATION
+    volunteer_organization_element.when_present.send_keys $VOLUNTEER_ORGANIZATION
     street_element.send_keys 'Some test street'
-    region_element.wait_until_present.select 'EMEIA'
-    city_select_element.wait_until_present.select 'London'
-    country_element.wait_until_present.select 'United Kingdom'
+    region_element.when_present.select 'EMEIA'
+    city_select_element.when_present.select 'London'
+    country_element.when_present.select 'United Kingdom'
     save_element.click
     edit_element.when_visible
   end
@@ -36,8 +36,8 @@ class VolunteerPage < AbstractPage
   text_field(:city, xpath: "//label[text()='City']/ancestor::td/following-sibling::td[1]//input")
 
   def create_volunteer_organization
-    new_element.wait_until_present.click
-    set_name_element.wait_until_present.send_keys $VOLUNTEER_ORGANIZATION
+    new_element.when_present.click
+    set_name_element.when_present.send_keys $VOLUNTEER_ORGANIZATION
     city_element.send_keys 'London'
     country_element.select 'United Kingdom'
     save_element.click

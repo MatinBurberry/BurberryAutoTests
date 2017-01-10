@@ -5,8 +5,8 @@ class ConnectPage < AbstractPage
 
   def change_hr_case_status(case_number, status)
     find_item(case_number, 'Ask HR Cases')
-    edit_element.wait_until_present.click
-    status_element.wait_until_present.select status
+    edit_element.when_present.click
+    status_element.when_present.select status
     save_element.click
     sleep 2
   end
