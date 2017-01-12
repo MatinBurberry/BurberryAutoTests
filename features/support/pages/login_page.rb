@@ -19,7 +19,7 @@ class LoginPage < AbstractPage
     go_to_salesforce
     user_label_element.when_present.click
     logout_element.when_present.click
-    br.wait_until{browser.url.eql?("https://www.salesforce.com/")}
+    br.wait_until{browser.url.include?("salesforce.com")}
     br.goto (FigNewton.base_url)
     username_element.when_present
   end
