@@ -30,6 +30,7 @@ class ToolsBurberry20Page < Burberry20Page
     message_element.when_present
     ok_element.when_present.click
     br.element(xpath: "//dd[text()='" + $GIFT_DESC + "']").when_present
+    sleep 2
   end
 
   def verify_gift_received

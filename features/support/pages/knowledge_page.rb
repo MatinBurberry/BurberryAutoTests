@@ -1,4 +1,4 @@
-  class KnowledgePage < AbstractPage
+class KnowledgePage < AbstractPage
   include PageObject
 
   select_list(:tier, :id => 'p3')
@@ -49,8 +49,9 @@
   def attach_text_file
     attach_file_element.when_present.click
     #browse_element.when_present.send_keys (get_base_dir + 'test_data\policy.txt')
-    full_path = get_base_dir + 'test_data\policy.txt'
-    browse_element.when_present.send_keys full_path
+    #full_path = get_base_dir + 'test_data\policy.txt'
+    # browse_element.when_present.send_keys full_path
+    br.element(xpath: "//input[@type='file']").when_present.send_keys (get_base_dir + 'test_data\policy.txt')
     attach_selected_element.when_present.click
     sleep 5
     done_element.when_present.click
