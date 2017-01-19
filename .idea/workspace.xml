@@ -29,7 +29,7 @@
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Raise_A_New_Case_with_HR__5_.coverage" NAME="Scenario: SFDC-XXX Raise A New Case with HR (5) Coverage Results" MODIFIED="1460033617773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Reassign_Customer__3_.coverage" NAME="Scenario: SFDC-XXX Reassign Customer (3) Coverage Results" MODIFIED="1468241365178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX__1_.coverage" NAME="Scenario: SFDC-XXX (1) Coverage Results" MODIFIED="1453209644601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
-    <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Verify_Customer_assignment.coverage" NAME="Scenario: SFDC-XXX Verify Customer assignment Coverage Results" MODIFIED="1468241548051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
+    <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Verify_Customer_assignment.coverage" NAME="Scenario: SFDC-XXX Verify Customer assignment Coverage Results" MODIFIED="1484826954184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Verify_policy_picture_is_displayed_in_Burberry_World_2_0__1_.coverage" NAME="Scenario: SFDC-XXX Verify policy picture is displayed in Burberry World 2.0 (1) Coverage Results" MODIFIED="1450260394928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_807_Create_private_group_in_Burberry_World_2_0__3_.coverage" NAME="Scenario: SFDC-807 Create private group in Burberry World 2.0 (3) Coverage Results" MODIFIED="1457080772484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_834_Create_policy_and_verify_in_Burberry_World_2_0.coverage" NAME="Scenario: SFDC-834 Create policy and verify in Burberry World 2.0 Coverage Results" MODIFIED="1484655518580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
@@ -152,13 +152,14 @@
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Verify_Supply_Chain_World_UAT.coverage" NAME="Scenario: SFDC-XXX Verify Supply Chain World UAT Coverage Results" MODIFIED="1476798072847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_820_Icon_Awards_share_nomination_post.coverage" NAME="Scenario: SFDC-820 Icon Awards share nomination post Coverage Results" MODIFIED="1455028571116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@knowledge_feature.coverage" NAME="knowledge.feature Coverage Results" MODIFIED="1450265873915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
-    <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Verify_Customer_assignment__1_.coverage" NAME="Scenario: SFDC-XXX Verify Customer assignment (1) Coverage Results" MODIFIED="1467286530649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
+    <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Verify_Customer_assignment__1_.coverage" NAME="Scenario: SFDC-XXX Verify Customer assignment (1) Coverage Results" MODIFIED="1484827487157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__Items_Cleanup_Customers.coverage" NAME="Scenario: Items Cleanup Customers Coverage Results" MODIFIED="1474441522636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__Items_Cleanup_Volunteer_Organizations.coverage" NAME="Scenario: Items Cleanup Volunteer Organizations Coverage Results" MODIFIED="1477565969267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Publish_public_news_story_with_Tag.coverage" NAME="Scenario: SFDC-XXX Publish public news story with Tag Coverage Results" MODIFIED="1451988816755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Publish_public_news_story__3_.coverage" NAME="Scenario: SFDC-XXX Publish public news story (3) Coverage Results" MODIFIED="1452245959159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_803_Icon_Awards_check_nomination_description_50_characters_long.coverage" NAME="Scenario: SFDC-803 Icon Awards check nomination description 50 characters long Coverage Results" MODIFIED="1471517704692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Icon_Awards_verify_FAQ_Set.coverage" NAME="Scenario: SFDC-XXX Icon Awards verify FAQ Set Coverage Results" MODIFIED="1451295015540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
+    <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Verify_Customer_assignment__2_.coverage" NAME="Scenario: SFDC-XXX Verify Customer assignment (2) Coverage Results" MODIFIED="1484828101010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_829_Share_a_post_and_view_it_in_Burberry_World_2_0.coverage" NAME="Scenario: SFDC-829 Share a post and view it in Burberry World 2.0 Coverage Results" MODIFIED="1459245272353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_815_Create_policy_for_user_to_approve_in_Burberry_World_2_0__4_.coverage" NAME="Scenario: SFDC-815 Create policy for user to approve in Burberry World 2.0 (4) Coverage Results" MODIFIED="1450193400815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Knowledge__1_.coverage" NAME="Scenario: SFDC-XXX Knowledge (1) Coverage Results" MODIFIED="1453213943762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
@@ -167,7 +168,7 @@
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Get_case_in_progress_status_from_HR.coverage" NAME="Scenario: SFDC-XXX Get case in progress status from HR Coverage Results" MODIFIED="1476875560630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_825_Icon_Awards_Archive.coverage" NAME="Scenario: SFDC-825 Icon Awards Archive Coverage Results" MODIFIED="1475072095277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Verify_Customer_information__1_.coverage" NAME="Scenario: SFDC-XXX Verify Customer information (1) Coverage Results" MODIFIED="1467289462983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
-    <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_992_Approve_Gift_Received.coverage" NAME="Scenario: SFDC-992 Approve Gift Received Coverage Results" MODIFIED="1469711558771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
+    <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_992_Approve_Gift_Received.coverage" NAME="Scenario: SFDC-992 Approve Gift Received Coverage Results" MODIFIED="1484829268705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__Items_Cleanup_Award_Category__3_.coverage" NAME="Scenario: Items Cleanup Award Category (3) Coverage Results" MODIFIED="1478155635362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_News__1_.coverage" NAME="Scenario: SFDC-XXX News (1) Coverage Results" MODIFIED="1453214934039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_811_Create_Volunteer_Activity_in_Foundation__4_.coverage" NAME="Scenario: SFDC-811 Create Volunteer Activity in Foundation (4) Coverage Results" MODIFIED="1469700179970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
@@ -206,7 +207,7 @@
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Approve_Gift_Given.coverage" NAME="Scenario: SFDC-XXX Approve Gift Given Coverage Results" MODIFIED="1467283203675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__Cleanup.coverage" NAME="Scenario: Cleanup Coverage Results" MODIFIED="1470291975957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Verify_policy_picture_is_displayed_in_Burberry_World_2_0__5_.coverage" NAME="Scenario: SFDC-XXX Verify policy picture is displayed in Burberry World 2.0 (5) Coverage Results" MODIFIED="1450260005424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
-    <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_993_Approve_Gift_Given.coverage" NAME="Scenario: SFDC-993 Approve Gift Given Coverage Results" MODIFIED="1462373145877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
+    <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_993_Approve_Gift_Given.coverage" NAME="Scenario: SFDC-993 Approve Gift Given Coverage Results" MODIFIED="1484829166873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Raise_A_New_Case_with_HR__4_.coverage" NAME="Scenario: SFDC-XXX Raise A New Case with HR (4) Coverage Results" MODIFIED="1460033542877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Create_policy_in_Burberry_World_2_0.coverage" NAME="Scenario: SFDC-XXX Create policy in Burberry World 2.0 Coverage Results" MODIFIED="1450263554194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Verify_no_selected_customer_message.coverage" NAME="Scenario: SFDC-XXX Verify no selected customer message Coverage Results" MODIFIED="1468245507828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
@@ -223,6 +224,7 @@
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__Publish_public_news_story__4_.coverage" NAME="Scenario: Publish public news story (4) Coverage Results" MODIFIED="1451912064502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__Items_Cleanup_Volunteer_Organizations__2_.coverage" NAME="Scenario: Items Cleanup Volunteer Organizations (2) Coverage Results" MODIFIED="1476779240562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Verify_reassignment_message__1_.coverage" NAME="Scenario: SFDC-XXX Verify reassignment message (1) Coverage Results" MODIFIED="1471864784524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
+    <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Verify_Customer_assignment__3_.coverage" NAME="Scenario: SFDC-XXX Verify Customer assignment (3) Coverage Results" MODIFIED="1484829075076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Verify_retail_policy_image_is_displayed_in_Burberry_World_2_0.coverage" NAME="Scenario: SFDC-XXX Verify retail policy image is displayed in Burberry World 2.0 Coverage Results" MODIFIED="1450275327869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_XXX_Verify_Store_Pages.coverage" NAME="Scenario: SFDC-XXX Verify Store Pages Coverage Results" MODIFIED="1476797850215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
     <SUITE FILE_PATH="coverage/burberry_2.0@Scenario__SFDC_807_Create_private_group_in_Burberry_World_2_0__1_.coverage" NAME="Scenario: SFDC-807 Create private group in Burberry World 2.0 (1) Coverage Results" MODIFIED="1457079282130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="burberry_2.0" />
@@ -240,91 +242,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="retail_cases.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/retail_cases.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="icon_awards.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/icon_awards.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="icon_awards_steps.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/step_definitions/icon_awards_steps.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="icon_awards_page.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/support/pages/icon_awards_page.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="67" column="105" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="105" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="knowledge.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/knowledge.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="tools.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/tools.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34982333">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="burberry20_page.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/support/pages/burberry20_page.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tools_steps.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/step_definitions/tools_steps.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tools_burberry20_page.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/support/pages/tools_burberry20_page.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.2862191">
+              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -335,6 +257,26 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tools_steps.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/step_definitions/tools_steps.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customers_contacts_page.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/support/pages/customers_contacts_page.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -371,7 +313,6 @@
         <option value="$PROJECT_DIR$/features/step_definitions/groups_steps.rb" />
         <option value="$PROJECT_DIR$/features/support/pages/burberry20_page.rb" />
         <option value="$PROJECT_DIR$/features/step_definitions/icon_awards_steps.rb" />
-        <option value="$PROJECT_DIR$/features/support/pages/customers_contacts_page.rb" />
         <option value="$PROJECT_DIR$/features/support/pages/icon_awards_burberry20_page.rb" />
         <option value="$PROJECT_DIR$/features/icon_awards.feature" />
         <option value="$PROJECT_DIR$/features/support/pages/cleanup.feature" />
@@ -396,6 +337,7 @@
         <option value="$PROJECT_DIR$/features/support/pages/login_page.rb" />
         <option value="$PROJECT_DIR$/features/support/pages/knowledge_page.rb" />
         <option value="$PROJECT_DIR$/features/support/pages/tools_burberry20_page.rb" />
+        <option value="$PROJECT_DIR$/features/support/pages/customers_contacts_page.rb" />
       </list>
     </option>
   </component>
@@ -405,8 +347,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="y" value="-1088" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -435,7 +376,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -521,6 +461,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -540,104 +481,8 @@
       <recent name="D:\Ruby\burberry_2.0\features\support\pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber.Scenario: SFDC-989 Declare Gift Received (1)">
-    <configuration default="false" name="Scenario: SFDC-805 Icon Awards Full cycle" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
-      <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
-      <module name="burberry_2.0" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/features/icon_awards.feature" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^SFDC\-805 Icon Awards Full cycle$" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Scenario: SFDC-834 Create policy and verify in Burberry World 2.0" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
-      <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
-      <module name="burberry_2.0" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/features/knowledge.feature" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^SFDC\-834 Create policy and verify in Burberry World 2\.0$" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Scenario: SFDC-834 Create policy and verify in Burberry World 2.0 (1)" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
-      <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
-      <module name="burberry_2.0" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/features/knowledge.feature" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^SFDC\-834 Create policy and verify in Burberry World 2\.0$" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Scenario: SFDC-989 Declare Gift Received" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
+  <component name="RunManager" selected="Cucumber.Scenario: SFDC-992 Approve Gift Received">
+    <configuration default="false" name="Scenario: SFDC-XXX Verify Customer assignment (1)" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="burberry_2.0" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -656,7 +501,7 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/features/tools.feature" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^SFDC\-989 Declare Gift Received$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^SFDC\-XXX Verify Customer assignment$" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
@@ -669,7 +514,7 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
       <method />
     </configuration>
-    <configuration default="false" name="Scenario: SFDC-989 Declare Gift Received (1)" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
+    <configuration default="false" name="Scenario: SFDC-XXX Verify Customer assignment (2)" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="burberry_2.0" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -688,7 +533,103 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/features/tools.feature" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^SFDC\-989 Declare Gift Received$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^SFDC\-XXX Verify Customer assignment$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Scenario: SFDC-XXX Verify Customer assignment (3)" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
+      <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
+      <module name="burberry_2.0" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/features/tools.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^SFDC\-XXX Verify Customer assignment$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Scenario: SFDC-993 Approve Gift Given" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
+      <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
+      <module name="burberry_2.0" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/features/tools.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^SFDC\-993 Approve Gift Given$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Scenario: SFDC-992 Approve Gift Received" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
+      <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
+      <module name="burberry_2.0" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/features/tools.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^SFDC\-992 Approve Gift Received$" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
@@ -815,19 +756,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Cucumber.Scenario: Items Cleanup Customers" />
-      <item index="1" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-805 Icon Awards Full cycle" />
-      <item index="2" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-834 Create policy and verify in Burberry World 2.0" />
-      <item index="3" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-834 Create policy and verify in Burberry World 2.0 (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-989 Declare Gift Received" />
-      <item index="5" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-989 Declare Gift Received (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-XXX Verify Customer assignment (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-XXX Verify Customer assignment (2)" />
+      <item index="3" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-XXX Verify Customer assignment (3)" />
+      <item index="4" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-993 Approve Gift Given" />
+      <item index="5" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-992 Approve Gift Received" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-989 Declare Gift Received (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-989 Declare Gift Received" />
-        <item index="2" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-834 Create policy and verify in Burberry World 2.0 (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-834 Create policy and verify in Burberry World 2.0" />
-        <item index="4" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-805 Icon Awards Full cycle" />
+        <item index="0" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-992 Approve Gift Received" />
+        <item index="1" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-993 Approve Gift Given" />
+        <item index="2" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-XXX Verify Customer assignment (3)" />
+        <item index="3" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-XXX Verify Customer assignment (2)" />
+        <item index="4" class="java.lang.String" itemvalue="Cucumber.Scenario: SFDC-XXX Verify Customer assignment (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -845,26 +786,26 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__SFDC-834_Create_policy_and_verify_in_Burberry_World_2_0 - 2017.01.17 at 15h 20m 17s.xml">
-      <configuration name="Scenario: SFDC-834 Create policy and verify in Burberry World 2.0" configurationId="CucumberRunConfigurationType" />
+    <history-entry file="Scenario__SFDC-992_Approve_Gift_Received - 2017.01.19 at 15h 37m 25s.xml">
+      <configuration name="Scenario: SFDC-992 Approve Gift Received" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__SFDC-834_Create_policy_and_verify_in_Burberry_World_2_0_(1) - 2017.01.17 at 15h 24m 27s.xml">
-      <configuration name="Scenario: SFDC-834 Create policy and verify in Burberry World 2.0 (1)" configurationId="CucumberRunConfigurationType" />
+    <history-entry file="Scenario__SFDC-993_Approve_Gift_Given - 2017.01.19 at 15h 34m 22s.xml">
+      <configuration name="Scenario: SFDC-993 Approve Gift Given" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__SFDC-985_Find_Retail_Case_by_number - 2017.01.12 at 15h 12m 41s.xml">
-      <configuration name="Scenario: SFDC-985 Find Retail Case by number" configurationId="CucumberRunConfigurationType" />
+    <history-entry file="Scenario__SFDC-XXX_Verify_Customer_assignment - 2017.01.19 at 14h 56m 54s.xml">
+      <configuration name="Scenario: SFDC-XXX Verify Customer assignment" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__SFDC-989_Declare_Gift_Received - 2017.01.17 at 15h 26m 47s.xml">
-      <configuration name="Scenario: SFDC-989 Declare Gift Received" configurationId="CucumberRunConfigurationType" />
+    <history-entry file="Scenario__SFDC-XXX_Verify_Customer_assignment_(1) - 2017.01.19 at 15h 06m 41s.xml">
+      <configuration name="Scenario: SFDC-XXX Verify Customer assignment (1)" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__SFDC-989_Declare_Gift_Received_(1) - 2017.01.17 at 15h 28m 53s.xml">
-      <configuration name="Scenario: SFDC-989 Declare Gift Received (1)" configurationId="CucumberRunConfigurationType" />
+    <history-entry file="Scenario__SFDC-XXX_Verify_Customer_assignment_(2) - 2017.01.19 at 15h 16m 48s.xml">
+      <configuration name="Scenario: SFDC-XXX Verify Customer assignment (2)" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__SFDC-XXX_Get_case_in_progress_status_from_HR_(4) - 2016.10.19 at 15h 10m 17s.xml">
-      <configuration name="Scenario: SFDC-XXX Get case in progress status from HR (4)" configurationId="CucumberRunConfigurationType" />
+    <history-entry file="Scenario__SFDC-XXX_Verify_Customer_assignment_(3) - 2017.01.19 at 15h 27m 34s.xml">
+      <configuration name="Scenario: SFDC-XXX Verify Customer assignment (3)" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__SFDC-XXX_Verify_Supply_Chain_World - 2016.10.18 at 16h 27m 48s.xml">
-      <configuration name="Scenario: SFDC-XXX Verify Supply Chain World" configurationId="CucumberRunConfigurationType" />
+    <history-entry file="Scenario__SFDC-XXX_Verify_Customer_assignment_(3) - 2017.01.19 at 15h 32m 32s.xml">
+      <configuration name="Scenario: SFDC-XXX Verify Customer assignment (3)" configurationId="CucumberRunConfigurationType" />
     </history-entry>
     <history-entry file="Scenario__SFDC-XXX_Verify_Supply_Chain_World - 2016.10.18 at 16h 31m 26s.xml">
       <configuration name="Scenario: SFDC-XXX Verify Supply Chain World" configurationId="CucumberRunConfigurationType" />
@@ -877,16 +818,15 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="-1088" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41417912" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41897655" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277592" sideWeight="0.5021322" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32218507" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33779263" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33779263" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32552955" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -897,6 +837,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32218507" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1025,13 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="29" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/support/pages/customers_contacts_page.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1172,7 +1106,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1196,7 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1204,7 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1240,26 +1171,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/support/pages/knowledge_page.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/knowledge.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/tools_steps.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1274,16 +1189,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/features/support/pages/burberry20_page.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.3180212">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/support/pages/knowledge_page.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/tools_steps.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/support/pages/customers_contacts_page.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/tools.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34982333">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.2862191">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
           <folding />
         </state>
       </provider>

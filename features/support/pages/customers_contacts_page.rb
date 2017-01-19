@@ -15,7 +15,7 @@ class CustomersContactsPage < AbstractPage
     new_element.when_present.click
     record_type_element.when_present.select 'Person Account'
     continue_element.when_present.click
-    salutation_element.when_present.select 'Mr.'
+    #salutation_element.when_present.select 'Mr.'
     first_name_element.when_present.send_keys $CUSTOMER_FIRST
     last_name_element.when_present.send_keys $CUSTOMER_LAST
     store_element.when_present.send_keys 'Heathrow Airport T5 London'
@@ -46,7 +46,7 @@ class CustomersContactsPage < AbstractPage
     status_element.when_present.select 'Exited'
     store_id_element.when_present.send_keys '1136'
     tier_element.when_present.select 'Classic'
-    previous_sa_name_element.when_present.send_keys $USER_2
+    #previous_sa_name_element.when_present.send_keys $USER_2
     save_element.click
   end
 
