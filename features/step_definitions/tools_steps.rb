@@ -122,7 +122,7 @@ end
 And(/^I should be able to use Supply Chain World UAT link$/) do
   on(HomePage).select_app 'Burberry World 2.0'
   on(Burberry20Page).select_left_link_containing 'Tools'
-  on(Burberry20Page).select_left_link_containing 'Supply Chain World UAT'
+  on(Burberry20Page).select_left_link_containing 'Supply Chain World - NEW'
   on(ToolsBurberry20Page).verify_supply_chain_world_uat.should be true
 end
 

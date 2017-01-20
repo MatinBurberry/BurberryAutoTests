@@ -60,14 +60,21 @@ class ToolsBurberry20Page < Burberry20Page
 
   def verify_supply_chain_world_uat
     sleep 2
-    br.url.end_with? "scwhomenew"
+    #br.url.end_with? "scwhomenew"
+    result = false
+    br.windows.last.use do
+      #result =  br.url.include? "sap/public/ap"
+      result =  br.url.include? "sso.burberry.com/idp/SSO"
+    end
+    result
   end
 
   def verify_store_pages
     sleep 2
     result = false
     br.windows.last.use do
-      result =  br.url.include? "sap/public/ap"
+      #result =  br.url.include? "sap/public/ap"
+      result =  br.url.include? "sso.dev.burberry.com"
     end
     result
   end
