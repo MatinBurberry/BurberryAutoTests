@@ -115,8 +115,8 @@ class CVMBurberry20Page < Burberry20Page
     sleep 2
     customer_type_element.select 'New'
     sleep 2
-    title_element.select 'Mr'
-    sleep 2
+    #title_element.select 'Mr'
+    #sleep 2
     city_element.select 'Paris'
     sleep 2
     country_element.select 'France'
