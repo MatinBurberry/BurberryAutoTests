@@ -5,10 +5,21 @@ class LoginPage < AbstractPage
   text_field(:password, :id => 'password')
   button(:login, :id => 'Login')
 
+  # def login_to_system(username = FigNewton.test_username, password = FigNewton.test_password)
+  #   self.username = username
+  #   self.password = password
+  #   login
+  #   go_to_salesforce
+  # end
+
+  button(:continue, xpath: "//input[@value='Continue']")
+
   def login_to_system(username = FigNewton.test_username, password = FigNewton.test_password)
-    self.username = username
-    self.password = password
-    login
+    br.goto ('https://burberry--dev--c.cs85.visual.force.com/?un=' + username + '&pw=' + password)
+    sleep 3
+      if continue_element.exists?
+        continue_element.click
+      end
     go_to_salesforce
   end
 
@@ -19,7 +30,7 @@ class LoginPage < AbstractPage
     go_to_salesforce
     user_label_element.when_present.click
     logout_element.when_present.click
-    br.wait_until{browser.url.include?("salesforce.com")}
+    br.wait_until { browser.url.include?("salesforce.com") }
     br.goto (FigNewton.base_url)
     username_element.when_present
   end

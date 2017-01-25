@@ -1,5 +1,5 @@
 When(/^I login to Salesforce$/) do
-  visit(HomePage)
+  #visit(HomePage)
   on(LoginPage).login_to_system
   on(LoginPage).go_to_salesforce
 end
