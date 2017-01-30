@@ -16,7 +16,7 @@ class VolunteerPage < AbstractPage
     new_element.when_present.click
     set_name_element.when_present.send_keys $VOLUNTEER_ACTIVITY
     activity_category_element.when_present.select ('Other CI Activity')
-    duration_element.send_keys '24'
+    duration_element.send_keys '1'
     start_date_element.send_keys (date_offset_formatted(2, "%d/%m/%Y %H:%M"))
     status_element.select 'Available'
     sleep 2

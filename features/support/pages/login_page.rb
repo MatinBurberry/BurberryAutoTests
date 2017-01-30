@@ -17,9 +17,16 @@ class LoginPage < AbstractPage
   def login_to_system(username = FigNewton.test_username, password = FigNewton.test_password)
     br.goto ('https://burberry--dev--c.cs85.visual.force.com/?un=' + username + '&pw=' + password)
     sleep 3
-      if continue_element.exists?
-        continue_element.click
-      end
+    #if continue_element.exists?
+
+    begin
+      set_implicit_wait(3)
+      continue_element.click
+    rescue
+
+    ensure
+      set_implicit_wait
+    end
     go_to_salesforce
   end
 
@@ -27,11 +34,11 @@ class LoginPage < AbstractPage
   link(:logout, text: 'Logout')
 
   def logout_from_system
-    go_to_salesforce
-    user_label_element.when_present.click
-    logout_element.when_present.click
-    br.wait_until { browser.url.include?("salesforce.com") }
-    br.goto (FigNewton.base_url)
-    username_element.when_present
+    #go_to_salesforce
+    #user_label_element.when_present.click
+    #logout_element.when_present.click
+    #br.wait_until { browser.url.include?("salesforce.com") }
+    #br.goto (FigNewton.base_url)
+    #username_element.when_present
   end
 end
