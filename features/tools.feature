@@ -75,8 +75,8 @@ Feature: Tools feature in Burberry World 2.0
     Then I should be able to use Supply Chain World link
 
   @tools
-  Scenario: SFDC-XXX Verify Supply Chain World UAT
-    Then I should be able to use Supply Chain World UAT link
+  Scenario: SFDC-XXX Verify Supply Chain World New
+    Then I should be able to use Supply Chain World New link
 
   @tools
   Scenario: SFDC-XXX Verify Store Pages
